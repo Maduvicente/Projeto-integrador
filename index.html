@@ -6,49 +6,61 @@
     <title>Projeto Integrador</title>
     <link rel="shortcut icon" href="imagens/icons8-brasil-48.png" type="image/x-icon">
 
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <style>
-      body {
-        background-color: rgb(217, 236, 172);
+      /* Remove margens e preenchimentos do corpo e do html */
+      html, body {
         margin: 0;
-        font-family: Arial, sans-serif;
+        padding: 0;
+        overflow-x: hidden; /* Evita rolagem horizontal */
       }
 
       .navbar {
         background-color: rgb(56, 127, 57);
+        margin-bottom: 0; /* Remove margens do navbar */
       }
 
+      /* Ajuste para o efeito parallax */
       .parallax {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
+        margin-bottom: 0; /* Remove margens abaixo do parallax */
       }
 
       .parallax-1 {
-        background-image: url('imagens/Prancheta 1.png');
+        background-image: url('imagens/WhatsApp Image 2024-08-13 at 10.25.13.jpeg');
       }
 
       .parallax-2 {
-        background-image: url('imagens/226A5801.jpg');
+        background-image: url('imagens/WhatsApp Image 2024-08-13 at 10.25.13.jpeg');
       }
 
       .parallax-3 {
-        background-image: url('Imagem/camarotes_desktop.jpg');
+        background-image: url('imagens/WhatsApp Image 2024-08-13 at 10.25.13.jpeg');
       }
 
       .content {
-        background-color: white;
+        background-color: rgb(213, 232, 167);
         padding: 50px 20px;
-        margin-bottom: 50px;
+        margin: 0; /* Remove margens */
+        width: 100%; /* Garante que a largura ocupe 100% da tela */
+        box-sizing: border-box; /* Inclui o padding e a borda na largura e altura do elemento */
+      }
+
+      .rodape-imagem {
+        margin: 0; /* Remove margens ao redor do rodapé */
       }
 
       .rodape-imagem img {
         width: 100%;
         height: auto;
         display: block;
+        margin: 0; /* Remove margens ao redor da imagem */
       }
 
       h2 {
@@ -61,12 +73,20 @@
         line-height: 1.6;
         margin-bottom: 20px;
       }
+
+      /* Estilo para imagens dentro da seção de conteúdo */
+      .content img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 20px;
+      }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <a class="navbar-brand" href="#">
-        <img src="imagens/WhatsApp Image 2024-08-12 at 11.50.27.jpeg" width="80" height="80" alt="">
+        <img src="imagens/WhatsApp Image 2024-08-12 at 11.50.27.jpeg" width="80" height="80" alt="Logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -99,7 +119,7 @@
               Cultura Brasileira 
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="tradições.thml">Tradições</a>
+              <a class="dropdown-item" href="tradições.html">Tradições</a>
               <a class="dropdown-item" href="culinária.html">Culinária</a>
               <a class="dropdown-item" href="música.html">Música</a>
             </div>
@@ -129,11 +149,29 @@
     <div class="content">
       <h2>Título da Segunda Seção</h2>
       <p>
-      <img src="imagens" alt="" class="img-fluid">
+        Este é o texto da segunda seção. Adicione informações relevantes para o seu público. A imagem abaixo pode ser usada para ilustrar o texto ou adicionar contexto visual.
+      </p>
+      <img src="imagens/" alt="Descrição da Imagem">
+      <p>
+        Mais detalhes podem ser fornecidos nesta seção. O conteúdo pode ser ajustado para se adequar ao tema do seu site.
+      </p>
+    </div>
+
+    <div class="parallax parallax-3"></div>
+
+    <div class="content">
+      <h2>Título da Terceira Seção</h2>
+      <p>
+        Este é o texto da terceira seção. Continue a fornecer informações valiosas ao usuário aqui. O efeito parallax ajuda a manter o visual dinâmico.
+      </p>
+    </div>
+
+    <div class="rodape-imagem">
+      <img src="imagens/WhatsApp Image 2024-08-13 at 08.03.14.jpeg" alt="Rodapé Imagem" class="img-fluid">
     </div>
 
     <!-- Importando o jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl7Jt+Iep6Tt8bgzM1+UAdwD1KkLaa72qVkkTdzOsy4TrH+8I9Q8Iebhndg" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
