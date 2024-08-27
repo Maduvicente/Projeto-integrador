@@ -12,65 +12,76 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <style>
+        /* Estilo geral da página */
         body {
-            background-color: rgb(217, 236, 172);
-            font-family: Arial, sans-serif;
-            color: #333;
+            background-color: rgb(217, 236, 172); /* Cor de fundo */
+            font-family: Arial, sans-serif; /* Fonte do texto */
+            color: #333; /* Cor do texto */
         }
 
+        /* Estilo da barra de navegação */
         .navbar {
-            background-color: rgb(56, 127, 57);
+            background-color: rgb(56, 127, 57); /* Cor de fundo da navbar */
         }
 
+        /* Estilo dos links da navbar */
         .navbar-nav .nav-item .nav-link {
-            color: white;
-            padding: 10px 20px;
-            border-radius: 8px;
-            transition: background-color 0.3s ease-in-out;
+            color: white; /* Cor do texto dos links */
+            padding: 10px 20px; /* Espaçamento interno dos links */
+            border-radius: 8px; /* Bordas arredondadas nos links */
+            transition: background-color 0.3s ease-in-out; /* Efeito de transição na cor de fundo */
         }
 
+        /* Efeito de hover nos links da navbar */
         .navbar-nav .nav-item .nav-link:hover {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo ao passar o mouse */
         }
 
+        /* Estilo dos cards */
         .card {
-            border-radius: 15px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-            margin-bottom: 30px;
+            border-radius: 15px; /* Bordas arredondadas dos cards */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra dos cards */
+            transition: transform 0.3s ease-in-out; /* Efeito de transição ao passar o mouse */
+            margin-bottom: 30px; /* Espaçamento inferior entre os cards */
         }
 
+        /* Efeito de hover nos cards */
         .card:hover {
-            transform: scale(1.05);
+            transform: scale(1.05); /* Aumento do tamanho do card ao passar o mouse */
         }
 
+        /* Estilo do título do card */
         .card-title {
-            font-weight: 700;
-            font-size: 1.25rem;
-            color: rgb(56, 127, 57);
+            font-weight: 700; /* Negrito no título */
+            font-size: 1.25rem; /* Tamanho da fonte do título */
+            color: rgb(56, 127, 57); /* Cor do título */
         }
 
+        /* Estilo do texto do card */
         .card-body p {
-            font-size: 1rem;
-            line-height: 1.6;
-            font-weight: 300;
+            font-size: 1rem; /* Tamanho da fonte do texto */
+            line-height: 1.6; /* Altura da linha do texto */
+            font-weight: 300; /* Peso da fonte do texto */
         }
 
+        /* Estilo da imagem no rodapé */
         .rodape-imagem img {
-            width: 100%;
-            height: auto;
-            display: block;
-            margin-top: 40px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+            width: 100%; /* Largura da imagem é 100% do contêiner */
+            height: auto; /* Altura automática para manter a proporção */
+            display: block; /* Exibe a imagem como bloco */
+            margin-top: 40px; /* Espaçamento superior da imagem */
+            border-radius: 10px; /* Bordas arredondadas da imagem */
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Sombra da imagem */
         }
 
+        /* Estilo das bordas arredondadas da imagem do card */
         .card-img-top {
-            border-radius: 15px 15px 0 0;
+            border-radius: 15px 15px 0 0; /* Bordas arredondadas no topo da imagem */
         }
     </style>
 </head>
 <body>
+    <!-- Barra de navegação -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">
             <img src="imagens/WhatsApp Image 2024-08-12 at 11.50.27.jpeg" width="80" height="80" alt="">
@@ -109,78 +120,86 @@
         </div>
     </nav>
 
+    <!-- Conteúdo principal com cards -->
     <div class="container mt-5">
         <div class="row justify-content-center">
+            <!-- Card Região Norte -->
             <div class="card col-sm-12 col-md-4">
                 <img class="card-img-top" src="imagens/nordeste/4.png" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">Região Norte</h4>
-                    <p>•	Festival de Parintins (Amazonas): Também conhecido como "Boi-Bumbá", é uma das maiores festas folclóricas do Brasil, onde dois bois, o garantido e o Caprichoso, competem em uma celebração cheia de danças, música e encenações.
+                    <p>• Festival de Parintins (Amazonas): Também conhecido como "Boi-Bumbá", é uma das maiores festas folclóricas do Brasil, onde dois bois, o garantido e o Caprichoso, competem em uma celebração cheia de danças, música e encenações.
                       <br>
-                      •	Ciranda de Manacapuru (Amazonas): Um festival de dança que acontece em Manacapuru, onde grupos locais competem dançando a ciranda, uma dança de roda tradicional.
+                      • Ciranda de Manacapuru (Amazonas): Um festival de dança que acontece em Manacapuru, onde grupos locais competem dançando a ciranda, uma dança de roda tradicional.
                       <br>
-                      •	Culinária baseada em peixes e frutos da Amazônia: Pratos como o tacacá, pato no tucupi e o açaí são tradicionais da culinária nortista.</p>
+                      • Culinária baseada em peixes e frutos da Amazônia: Pratos como o tacacá, pato no tucupi e o açaí são tradicionais da culinária nortista.</p>
                 </div>
             </div>
 
+            <!-- Card Região Nordeste -->
             <div class="card col-sm-12 col-md-4">
                 <img class="card-img-top" src="imagens/nordeste//1.png" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">Região Nordeste</h4>
-                    <p>•	Festas Juninas (Pernambuco, Bahia, Paraíba, entre outros estados): As festas de São João, Santo Antônio e São Pedro são celebradas com quadrilhas, forró, comidas típicas (como canjica e pamonha), fogueiras e fogos de artifício.
+                    <p>• Festas Juninas (Pernambuco, Bahia, Paraíba, entre outros estados): As festas de São João, Santo Antônio e São Pedro são celebradas com quadrilhas, forró, comidas típicas (como canjica e pamonha), fogueiras e fogos de artifício.
                       <br>
-                      •	Carnaval de Salvador (Bahia): Considerado o maior carnaval de rua do mundo, com trios elétricos e blocos que arrastam multidões pelas ruas da cidade.
+                      • Carnaval de Salvador (Bahia): Considerado o maior carnaval de rua do mundo, com trios elétricos e blocos que arrastam multidões pelas ruas da cidade.
                       <br>
-                      •	Festa do Divino (Maranhão): Uma celebração religiosa com origem portuguesa, marcada por procissões, danças e músicas tradicionais.</p>
+                      • Festa do Divino (Maranhão): Uma celebração religiosa com origem portuguesa, marcada por procissões, danças e músicas tradicionais.</p>
                 </div>
             </div>
 
+            <!-- Card Região Centro-Oeste -->
             <div class="card col-sm-12 col-md-4">
                 <img class="card-img-top" src="imagens/nordeste/2.png" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">Região Centro-Oeste</h4>
-                    <p>•	Festa do Divino Pai Eterno (Goiás): Uma das maiores celebrações religiosas do país, realizada em Trindade, Goiás, que atrai milhares de romeiros anualmente.
+                    <p>• Festa do Divino Pai Eterno (Goiás): Uma das maiores celebrações religiosas do país, realizada em Trindade, Goiás, que atrai milhares de romeiros anualmente.
                     <br>
-                      •	Festa do Peão de Barretos (Mato Grosso do Sul): Embora seja mais famosa em São Paulo, essa tradição também é forte na região Centro-Oeste, com rodeios e música sertaneja.
+                      • Festa do Peão de Barretos (Mato Grosso do Sul): Embora seja mais famosa em São Paulo, essa tradição também é forte na região Centro-Oeste, com rodeios e música sertaneja.
                       <br>
-                      •	Cavalhadas (Goiás): Um espetáculo que simula as batalhas entre mouros e cristãos, com cavaleiros em trajes coloridos e armaduras.
+                      • Cavalhadas (Goiás): Um espetáculo que simula as batalhas entre mouros e cristãos, com cavaleiros em trajes coloridos e armaduras.
                       </p>
                 </div>
             </div>
         </div>
 
         <div class="row justify-content-center">
+            <!-- Card Região Sudeste -->
             <div class="card col-sm-12 col-md-4">
                 <img class="card-img-top" src="imagens/nordeste/5.png" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">Região Sudeste</h4>
-                    <p>•	Carnaval do Rio de Janeiro (Rio de Janeiro): Um dos maiores e mais famosos do mundo, com desfiles de escolas de samba no Sambódromo e blocos de rua espalhados por toda a cidade.
+                    <p>• Carnaval do Rio de Janeiro (Rio de Janeiro): Um dos maiores e mais famosos do mundo, com desfiles de escolas de samba no Sambódromo e blocos de rua espalhados por toda a cidade.
                       <br>
-                      •	Festa do Divino Espírito Santo (São Paulo, Minas Gerais): Uma tradição religiosa que inclui procissões, missas, coroação do Imperador e distribuição de comidas típicas.
+                      • Festa do Divino Espírito Santo (São Paulo, Minas Gerais): Uma tradição religiosa que inclui procissões, missas, coroação do Imperador e distribuição de comidas típicas.
                       <br>
-                      •	Congada e Moçambique (Minas Gerais): Festividades religiosas afro-brasileiras que celebram a coroação de reis e rainhas do Congo, mesclando elementos africanos, católicos e indígenas.</p>
+                      • Congada e Moçambique (Minas Gerais): Festividades religiosas afro-brasileiras que celebram a coroação de reis e rainhas do Congo, mesclando elementos africanos, católicos e indígenas.</p>
                 </div>
             </div>
 
+            <!-- Card Região Sul -->
             <div class="card col-sm-12 col-md-4">
                 <img class="card-img-top" src="imagens/nordeste/3.png" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">Região Sul</h4>
-                    <p>•	Oktoberfest (Santa Catarina): Inspirada na festa alemã, é celebrada principalmente em Blumenau e reúne elementos da cultura germânica, como danças, músicas, e comidas típicas.
+                    <p>• Oktoberfest (Santa Catarina): Inspirada na festa alemã, é celebrada principalmente em Blumenau e reúne elementos da cultura germânica, como danças, músicas, e comidas típicas.
                       <br>
-                      •	Fandango (Paraná e Rio Grande do Sul): Uma dança tradicional gaúcha, acompanhada por instrumentos como a viola e o acordeão.
+                      • Fandango (Paraná e Rio Grande do Sul): Uma dança tradicional gaúcha, acompanhada por instrumentos como a viola e o acordeão.
                       <br>
-                      •	Festa da Uva (Rio Grande do Sul): Realizada em Caxias do Sul, celebra a colheita da uva com desfiles, degustações de vinhos e apresentações culturais.
+                      • Festa da Uva (Rio Grande do Sul): Realizada em Caxias do Sul, celebra a colheita da uva com desfiles, degustações de vinhos e apresentações culturais.
                       </p>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Imagem do rodapé -->
     <div class="rodape-imagem">
         <img src="imagens/WhatsApp Image 2024-08-13 at 08.03.14.jpeg" alt="Rodapé Imagem" class="img-fluid">
     </div>
 
+    <!-- Scripts do Bootstrap e jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
