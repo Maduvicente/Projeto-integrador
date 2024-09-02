@@ -4,63 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Integrador</title>
+    <!-- Ícone do site -->
     <link rel="shortcut icon" href="imagens/icons8-brasil-48.png" type="image/x-icon">
     
-    <!-- Fonte original -->
+    <!-- Fonte original utilizada no site -->
     <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS para estilos pré-definidos e layout responsivo -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <style>
+        /* Estilo do corpo da página */
         body {
-            background-color: rgb(217, 236, 172);
-            font-family: Arial, sans-serif;
-            color: #000000;
+            background-color: rgb(217, 236, 172); /* Cor de fundo verde claro */
+            font-family: Arial, sans-serif; /* Fonte usada no texto */
+            color: #000000; /* Cor do texto principal */
         }
 
+        /* Estilo da barra de navegação */
         .navbar {
-            background-color: rgb(56, 127, 57);
+            background-color: rgb(56, 127, 57); /* Cor de fundo verde escuro */
         }
 
+        /* Estilo dos links na barra de navegação */
         .navbar-nav .nav-item .nav-link {
-            color: white;
-            padding: 10px 20px;
-            border-radius: 8px;
-            transition: background-color 0.3s ease-in-out;
+            color: white; /* Cor branca para os links */
+            padding: 10px 20px; /* Espaçamento interno dos links */
+            border-radius: 8px; /* Bordas arredondadas nos links */
+            transition: background-color 0.3s ease-in-out; /* Transição suave na mudança de cor ao passar o mouse */
         }
 
+        /* Estilo dos links ao passar o mouse */
         .navbar-nav .nav-item .nav-link:hover {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente branco ao passar o mouse */
         }
 
-        
-         
+        /* Estilo das imagens no rodapé */
         .rodape-imagem img {
-            width: 100%;
-            height: auto;
-            display: block;
-            margin-top: 40px;
-            border-radius: 0px;
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+            width: 100%; /* Largura total da imagem */
+            height: auto; /* Altura automática para manter a proporção */
+            display: block; /* Exibição em bloco para centralizar a imagem */
+            margin-top: 40px; /* Margem superior para espaçamento */
+            border-radius: 0px; /* Sem bordas arredondadas */
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para a imagem */
         }
-
-    
     </style>
 </head>
 <body>
+    <!-- Navbar (barra de navegação) -->
     <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- Logo do site -->
         <a class="navbar-brand" href="#">
             <img src="imagens/WhatsApp Image 2024-08-12 at 11.50.27.jpeg" width="80" height="80" alt="Logo">
         </a>
+        <!-- Botão para abrir/fechar o menu no modo responsivo -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Links de navegação -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+                <!-- Link para a página inicial -->
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
+                <!-- Menu dropdown para a galeria de fotos -->
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Galeria de fotos
@@ -70,6 +78,7 @@
                         <a class="dropdown-item" href="videos.html">Vídeos</a>
                     </div>
                 </li>
+                <!-- Menu dropdown para os artigos -->
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Artigos
@@ -78,6 +87,7 @@
                         <a class="dropdown-item" href="atualidade.html">Atualidades</a>
                     </div>
                 </li>
+                <!-- Menu dropdown para a cultura brasileira -->
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Cultura Brasileira
@@ -89,145 +99,111 @@
                     </div>
                 </li>
             </ul>
-            
         </div>
     </nav>
 
+    <!-- Card para a região Norte -->
     <div class="card mb-3">
-        <img src="imagens/Botanica.jpg" class="card-img-top" alt="150 px">
+        <img src="imagens/Botanica.jpg" class="card-img-top" alt="Imagem da região Norte">
         <div class="card-body">
           <h5 class="card-title">Norte</h5>
-          <p class="card-text"><p>A região Norte do Brasil, composta por sete estados (Acre, Amapá, Amazonas, Pará, Rondônia, Roraima e Tocantins), enfrenta desafios e oportunidades significativos em 2024. A preservação da Amazônia continua a ser um dos principais focos, especialmente devido ao aumento das pressões internacionais e domésticas para combater o desmatamento ilegal e as queimadas. Projetos de infraestrutura, como a pavimentação da BR-319, que liga Manaus a Porto Velho, estão em discussão, dividindo opiniões entre o desenvolvimento econômico e a preservação ambiental.
+          <p class="card-text">
+            A região Nordeste do Brasil, em 2024, destaca-se por uma série de eventos e transformações significativas. O turismo continua em ascensão, com cidades como Salvador, Fortaleza e Recife atraindo visitantes tanto pelas suas belezas naturais quanto pelo rico patrimônio cultural. O avanço nas energias renováveis, especialmente a solar e a eólica, tem transformado o Nordeste em um polo estratégico, contribuindo para a diversificação da matriz energética nacional. Entretanto, o semiárido enfrenta desafios constantes devido à seca, que afeta a agricultura e o abastecimento de água. Em resposta, programas de convivência com o semiárido, como a construção de cisternas e sistemas de irrigação, têm sido reforçados. 
             <br>
-            Além disso, a questão indígena permanece central, com debates sobre a demarcação de terras e a proteção dos direitos dos povos originários, que enfrentam ameaças de invasores e pressões econômicas. No cenário econômico, a exploração de recursos naturais, como minérios e petróleo, continua a ser um pilar, mas há um crescente interesse em desenvolver alternativas sustentáveis, incluindo o ecoturismo e a bioeconomia.
-            <br>             
-            A educação e a saúde também são desafios persistentes, com muitas áreas rurais enfrentando dificuldades de acesso. Iniciativas de inclusão digital e investimentos em infraestrutura básica estão sendo promovidos, mas ainda há um longo caminho a percorrer para reduzir as desigualdades regionais. A região Norte segue como uma área vital para o futuro do Brasil, exigindo políticas públicas equilibradas que conciliem desenvolvimento e sustentabilidade.
-           </p></p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <br>
+            Além disso, a região tem visto um crescimento na indústria tecnológica, com startups surgindo em hubs como Recife e Salvador. Políticas públicas voltadas para a educação e inclusão digital também têm ganhado força, buscando diminuir desigualdades históricas. Contudo, a segurança pública continua sendo uma preocupação, com o aumento da criminalidade em algumas capitais. Em termos políticos, a região mantém um papel crucial nas eleições nacionais, sendo um reduto de partidos progressistas.
+          </p>
         </div>
-      </div>
-      <div class="card">
+    </div>
+
+    <!-- Card para a região Nordeste -->
+    <div class="card">
         <div class="card-body">
           <h5 class="card-title">Nordeste</h5>
-          <p class="card-text"><p> A região Nordeste do Brasil, em 2024, destaca-se por uma série de eventos e transformações significativas. O turismo continua em ascensão, com cidades como Salvador, Fortaleza e Recife atraindo visitantes tanto pelas suas belezas naturais quanto pelo rico patrimônio cultural. O avanço nas energias renováveis, especialmente a solar e a eólica, tem transformado o Nordeste em um polo estratégico, contribuindo para a diversificação da matriz energética nacional. Entretanto, o semiárido enfrenta desafios constantes devido à seca, que afeta a agricultura e o abastecimento de água. Em resposta, programas de convivência com o semiárido, como a construção de cisternas e sistemas de irrigação, têm sido reforçados. Além disso, a região tem visto um crescimento na indústria tecnológica, com startups surgindo em hubs como Recife e Salvador. Políticas públicas voltadas para a educação e inclusão digital também têm ganhado força, buscando diminuir desigualdades históricas. Contudo, a segurança pública continua sendo uma preocupação, com o aumento da criminalidade em algumas capitais. Em termos políticos, a região mantém um papel crucial nas eleições nacionais, sendo um reduto de partidos progressistas.</p>
-          
+          <p class="card-text">
+            A região Norte do Brasil, composta por sete estados (Acre, Amapá, Amazonas, Pará, Rondônia, Roraima e Tocantins), enfrenta desafios e oportunidades significativos em 2024. A preservação da Amazônia continua a ser um dos principais focos, especialmente devido ao aumento das pressões internacionais e domésticas para combater o desmatamento ilegal e as queimadas. Projetos de infraestrutura, como a pavimentação da BR-319, que liga Manaus a Porto Velho, estão em discussão, dividindo opiniões entre o desenvolvimento econômico e a preservação ambiental.
+            <br>
+            <br>
+            Além disso, a questão indígena permanece central, com debates sobre a demarcação de terras e a proteção dos direitos dos povos originários, que enfrentam ameaças de invasores e pressões econômicas. No cenário econômico, a exploração de recursos naturais, como minérios e petróleo, continua a ser um pilar, mas há um crescente interesse em desenvolver alternativas sustentáveis, incluindo o ecoturismo e a bioeconomia.
+            <br>
+            <br>
+            A educação e a saúde também são desafios persistentes, com muitas áreas rurais enfrentando dificuldades de acesso. Iniciativas de inclusão digital e investimentos em infraestrutura básica estão sendo promovidos, mas ainda há um longo caminho a percorrer para reduzir as desigualdades regionais. A região Norte segue como uma área vital para o futuro do Brasil, exigindo políticas públicas equilibradas que conciliem desenvolvimento e sustentabilidade.
+
+          </p>
         </div>
-        <img src="..." class="card-img-bottom" alt="...">
-      </div>
-<br>
-      <div class="card mb-3">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="..." class="card-img-bottom" alt="Imagem da região Nordeste">
+    </div>
+
+    <!-- Card para a região Centro-Oeste -->
+    <div class="card mb-3">
+        <img src="..." class="card-img-top" alt="Imagem da região Centro-Oeste">
         <div class="card-body">
           <h5 class="card-title">Centro-Oeste</h5>
-          <p class="card-text"><p>A região Centro-Oeste do Brasil tem se destacado por sua relevância no cenário econômico e ambiental do país. Composta pelos estados de Goiás, Mato Grosso, Mato Grosso do Sul e o Distrito Federal, a região é um dos principais polos agropecuários do Brasil, responsável por grande parte da produção de grãos, carne bovina e soja. Recentemente, a região tem enfrentado desafios relacionados ao desmatamento e à preservação do Cerrado, um dos biomas mais ameaçados do país. A expansão agrícola, muitas vezes realizada de forma predatória, tem gerado debates sobre a sustentabilidade das práticas agrícolas na região.
+          <p class="card-text">
+            A região Centro-Oeste do Brasil tem se destacado por sua relevância no cenário econômico e ambiental do país. Composta pelos estados de Goiás, Mato Grosso, Mato Grosso do Sul e o Distrito Federal, a região é um dos principais polos agropecuários do Brasil, responsável por grande parte da produção de grãos, carne bovina e soja. Recentemente, a região tem enfrentado desafios relacionados ao desmatamento e à preservação do Cerrado, um dos biomas mais ameaçados do país. A expansão agrícola, muitas vezes realizada de forma predatória, tem gerado debates sobre a sustentabilidade das práticas agrícolas na região.
+            <br>
             <br>
             Além disso, o Centro-Oeste tem se tornado um ponto estratégico para o desenvolvimento da infraestrutura de transporte, com a expansão de rodovias e ferrovias para escoar a produção agrícola. A região também abriga a capital do país, Brasília, que tem sido palco de importantes decisões políticas, especialmente em um momento de mudanças e tensões no cenário político nacional. A combinação de crescimento econômico, desafios ambientais e relevância política faz do Centro-Oeste uma região central para o futuro do Brasil.
-            </p></p>
-          
+
+          </p>
         </div>
-      </div>
-      <div class="card">
+    </div>
+
+    <!-- Card para a região Sudeste -->
+    <div class="card">
         <div class="card-body">
           <h5 class="card-title">Sudeste</h5>
-          <p class="card-text"><p>A região Sudeste do Brasil, composta por São Paulo, Rio de Janeiro, Minas Gerais e Espírito Santo, continua sendo o principal motor econômico do país, respondendo por mais de 50% do PIB nacional. São Paulo, maior estado em termos econômicos, tem enfrentado desafios relacionados ao crescimento urbano desordenado e à crise hídrica, agravada pelas mudanças climáticas. O Rio de Janeiro, por sua vez, lida com questões de segurança pública, enquanto tenta revitalizar sua economia, especialmente após a crise fiscal que afetou o estado nos últimos anos.
+          <p class="card-text">
+            A região Sudeste do Brasil, composta por São Paulo, Rio de Janeiro, Minas Gerais e Espírito Santo, continua sendo o principal motor econômico do país, respondendo por mais de 50% do PIB nacional. São Paulo, maior estado em termos econômicos, tem enfrentado desafios relacionados ao crescimento urbano desordenado e à crise hídrica, agravada pelas mudanças climáticas. O Rio de Janeiro, por sua vez, lida com questões de segurança pública, enquanto tenta revitalizar sua economia, especialmente após a crise fiscal que afetou o estado nos últimos anos.
             <br>
-            Minas Gerais tem se destacado pela diversificação econômica, com avanços no setor de tecnologia e mineração sustentável. No Espírito Santo, o foco tem sido na expansão do setor portuário e no fortalecimento do agronegócio, com destaque para a produção de café e celulose. Além disso, toda a região está empenhada em transitar para uma economia mais verde, com investimentos em energia renovável e projetos de sustentabilidade. No campo político, as eleições municipais recentes trouxeram novos líderes locais, refletindo um desejo por mudança e maior eficiência na gestão pública. A região segue como centro de inovações, enfrentando simultaneamente desafios socioeconômicos e ambientais.</p></p>
-          
+            <br>
+            Minas Gerais tem se destacado pela diversificação econômica, com avanços no setor de tecnologia e mineração sustentável. No Espírito Santo, o foco tem sido na expansão do setor portuário e no fortalecimento do agronegócio, com destaque para a produção de café e celulose. Além disso, toda a região está empenhada em transitar para uma economia mais verde, com investimentos em energia renovável e projetos de sustentabilidade. No campo político, as eleições municipais recentes trouxeram novos líderes locais, refletindo um desejo por mudança e maior eficiência na gestão pública. A região segue como centro de inovações, enfrentando simultaneamente desafios socioeconômicos e ambientais
+
+          </p>
         </div>
-        <img src="..." class="card-img-bottom" alt="...">
-      </div>
-<br>
-      <div class="card mb-3">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="..." class="card-img-bottom" alt="Imagem da região Sudeste">
+    </div>
+
+    <!-- Card para a região Sul -->
+    <div class="card mb-3">
+        <img src="..." class="card-img-top" alt="Imagem da região Sul">
         <div class="card-body">
           <h5 class="card-title">Sul</h5>
-          <p class="card-text"><p>A região Sul do Brasil, composta pelos estados do Paraná, Santa Catarina e Rio Grande do Sul, tem se destacado em 2024 por diversos aspectos econômicos, políticos e sociais. No campo econômico, a agricultura e o agronegócio continuam sendo pilares fundamentais, com a produção de grãos e carne mantendo a região como uma das mais produtivas do país. Além disso, a indústria tecnológica vem crescendo, especialmente em cidades como Florianópolis, conhecida como o “Vale do Silício” brasileiro, atraindo investimentos em startups e inovação.
+          <p class="card-text">
+            A região Sul do Brasil, composta pelos estados do Paraná, Santa Catarina e Rio Grande do Sul, tem se destacado em 2024 por diversos aspectos econômicos, políticos e sociais. No campo econômico, a agricultura e o agronegócio continuam sendo pilares fundamentais, com a produção de grãos e carne mantendo a região como uma das mais produtivas do país. Além disso, a indústria tecnológica vem crescendo, especialmente em cidades como Florianópolis, conhecida como o “Vale do Silício” brasileiro, atraindo investimentos em startups e inovação.
             <br>
-            No cenário político, o Sul tem mostrado um perfil conservador nas últimas eleições, refletindo nas políticas estaduais que priorizam a segurança pública e o agronegócio. As questões ambientais também têm ganhado destaque, especialmente com os debates sobre a preservação da Mata Atlântica e os desafios das mudanças climáticas que afetam a agricultura regional.
+            <br>
+            No cenário político, o Sul tem mostrado um perfil conservador nas últimas eleições, refletindo nas políticas estaduais que priorizam a segurança pública e o agronegócio. As questões ambientais também têm ganhado destaque, especialmente com os debates sobre a preservação da Mata Atlântica e os desafios das mudanças climáticas que afetam a agricultura regional
+            <br>
             <br>
             Socialmente, a região apresenta índices elevados de qualidade de vida, mas enfrenta desafios como a desigualdade e a necessidade de melhorar a infraestrutura urbana. Recentemente, o turismo também tem se expandido, com a valorização do ecoturismo e do turismo histórico-cultural, atraindo visitantes nacionais e internacionais. Esses fatores combinados fazem do Sul do Brasil uma região dinâmica e de grande relevância no cenário nacional.
-            </p></p>
-          
-        </div>
-      </div>
-      </div>
 
-    <!--
-    <div class="card mb-3">
-        <div class="card-body">
-          <h5 class="card-title">Norte</h5>
-          <p class="card-text"><p>A região Norte do Brasil, composta por sete estados (Acre, Amapá, Amazonas, Pará, Rondônia, Roraima e Tocantins), enfrenta desafios e oportunidades significativos em 2024. A preservação da Amazônia continua a ser um dos principais focos, especialmente devido ao aumento das pressões internacionais e domésticas para combater o desmatamento ilegal e as queimadas. Projetos de infraestrutura, como a pavimentação da BR-319, que liga Manaus a Porto Velho, estão em discussão, dividindo opiniões entre o desenvolvimento econômico e a preservação ambiental.
-            <br>
-            Além disso, a questão indígena permanece central, com debates sobre a demarcação de terras e a proteção dos direitos dos povos originários, que enfrentam ameaças de invasores e pressões econômicas. No cenário econômico, a exploração de recursos naturais, como minérios e petróleo, continua a ser um pilar, mas há um crescente interesse em desenvolver alternativas sustentáveis, incluindo o ecoturismo e a bioeconomia.
-            <br>             
-            A educação e a saúde também são desafios persistentes, com muitas áreas rurais enfrentando dificuldades de acesso. Iniciativas de inclusão digital e investimentos em infraestrutura básica estão sendo promovidos, mas ainda há um longo caminho a percorrer para reduzir as desigualdades regionais. A região Norte segue como uma área vital para o futuro do Brasil, exigindo políticas públicas equilibradas que conciliem desenvolvimento e sustentabilidade.
-           </p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          <img src="imagens/Botanica.jpg" class="card-img-top" alt="...">
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Nordeste</h5>
-          <p class="card-text"><p> A região Nordeste do Brasil, em 2024, destaca-se por uma série de eventos e transformações significativas. O turismo continua em ascensão, com cidades como Salvador, Fortaleza e Recife atraindo visitantes tanto pelas suas belezas naturais quanto pelo rico patrimônio cultural. O avanço nas energias renováveis, especialmente a solar e a eólica, tem transformado o Nordeste em um polo estratégico, contribuindo para a diversificação da matriz energética nacional. Entretanto, o semiárido enfrenta desafios constantes devido à seca, que afeta a agricultura e o abastecimento de água. Em resposta, programas de convivência com o semiárido, como a construção de cisternas e sistemas de irrigação, têm sido reforçados. Além disso, a região tem visto um crescimento na indústria tecnológica, com startups surgindo em hubs como Recife e Salvador. Políticas públicas voltadas para a educação e inclusão digital também têm ganhado força, buscando diminuir desigualdades históricas. Contudo, a segurança pública continua sendo uma preocupação, com o aumento da criminalidade em algumas capitais. Em termos políticos, a região mantém um papel crucial nas eleições nacionais, sendo um reduto de partidos progressistas.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-        <img src="imagens/Botanica.jpg" class="card-img-bottom" alt="...">
-      </div>
-
-
-        <div class="article">
-            <img src="Imagem/artigo3.jpg" alt="Artigo 3" class="article-image">
-            <h3>Centro-Oeste</h3>
-            <p>A região Centro-Oeste do Brasil tem se destacado por sua relevância no cenário econômico e ambiental do país. Composta pelos estados de Goiás, Mato Grosso, Mato Grosso do Sul e o Distrito Federal, a região é um dos principais polos agropecuários do Brasil, responsável por grande parte da produção de grãos, carne bovina e soja. Recentemente, a região tem enfrentado desafios relacionados ao desmatamento e à preservação do Cerrado, um dos biomas mais ameaçados do país. A expansão agrícola, muitas vezes realizada de forma predatória, tem gerado debates sobre a sustentabilidade das práticas agrícolas na região.
-              Além disso, o Centro-Oeste tem se tornado um ponto estratégico para o desenvolvimento da infraestrutura de transporte, com a expansão de rodovias e ferrovias para escoar a produção agrícola. A região também abriga a capital do país, Brasília, que tem sido palco de importantes decisões políticas, especialmente em um momento de mudanças e tensões no cenário político nacional. A combinação de crescimento econômico, desafios ambientais e relevância política faz do Centro-Oeste uma região central para o futuro do Brasil.
-              </p>
-        </div>
-
-        <div class="article">
-          <img src="Imagem/artigo3.jpg" alt="Artigo 3" class="article-image">
-          <h3>Sudeste</h3>
-          <p>A região Sudeste do Brasil, composta por São Paulo, Rio de Janeiro, Minas Gerais e Espírito Santo, continua sendo o principal motor econômico do país, respondendo por mais de 50% do PIB nacional. São Paulo, maior estado em termos econômicos, tem enfrentado desafios relacionados ao crescimento urbano desordenado e à crise hídrica, agravada pelas mudanças climáticas. O Rio de Janeiro, por sua vez, lida com questões de segurança pública, enquanto tenta revitalizar sua economia, especialmente após a crise fiscal que afetou o estado nos últimos anos.
-            <br>
-            Minas Gerais tem se destacado pela diversificação econômica, com avanços no setor de tecnologia e mineração sustentável. No Espírito Santo, o foco tem sido na expansão do setor portuário e no fortalecimento do agronegócio, com destaque para a produção de café e celulose. Além disso, toda a região está empenhada em transitar para uma economia mais verde, com investimentos em energia renovável e projetos de sustentabilidade. No campo político, as eleições municipais recentes trouxeram novos líderes locais, refletindo um desejo por mudança e maior eficiência na gestão pública. A região segue como centro de inovações, enfrentando simultaneamente desafios socioeconômicos e ambientais.</p>
-      </div>
-
-      <div class="article">
-        <img src="Imagem/artigo3.jpg" alt="Artigo 3" class="article-image">
-        <h3>Sul</h3>
-        <p>A região Sul do Brasil, composta pelos estados do Paraná, Santa Catarina e Rio Grande do Sul, tem se destacado em 2024 por diversos aspectos econômicos, políticos e sociais. No campo econômico, a agricultura e o agronegócio continuam sendo pilares fundamentais, com a produção de grãos e carne mantendo a região como uma das mais produtivas do país. Além disso, a indústria tecnológica vem crescendo, especialmente em cidades como Florianópolis, conhecida como o “Vale do Silício” brasileiro, atraindo investimentos em startups e inovação.
-          <br>
-          No cenário político, o Sul tem mostrado um perfil conservador nas últimas eleições, refletindo nas políticas estaduais que priorizam a segurança pública e o agronegócio. As questões ambientais também têm ganhado destaque, especialmente com os debates sobre a preservação da Mata Atlântica e os desafios das mudanças climáticas que afetam a agricultura regional.
-          <br>
-          Socialmente, a região apresenta índices elevados de qualidade de vida, mas enfrenta desafios como a desigualdade e a necessidade de melhorar a infraestrutura urbana. Recentemente, o turismo também tem se expandido, com a valorização do ecoturismo e do turismo histórico-cultural, atraindo visitantes nacionais e internacionais. Esses fatores combinados fazem do Sul do Brasil uma região dinâmica e de grande relevância no cenário nacional.
           </p>
+        </div>
     </div>
-    </div>
--->
+
+    <!-- Imagem do rodapé -->
     <div class="rodape-imagem">
         <img src="imagens/WhatsApp Image 2024-08-13 at 08.03.14.jpeg" alt="Rodapé Imagem" class="img-fluid">
     </div>
 
-    <!-- LIBRAS -->
-<div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
+    <!--VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
-    <!-- Importando o jQuery -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Inclusão do jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    <!-- Importando o js do Bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <!-- JavaScript (Opcional) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Inclusão do Popper.js para funcionamento de alguns componentes do Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!-- Inclusão do Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
