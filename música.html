@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Integrador</title>
+    <!-- Favicon -->
     <link rel="shortcut icon" href="imagens/icons8-brasil-48.png" type="image/x-icon">
     
-    <!-- Fonte original -->
+    <!-- Importando a fonte original (Arial) do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
+    <!-- Importando o Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <style>
+        /* Estilo do corpo da página */
         body {
             background-color: rgb(217, 236, 172);
             font-family: Arial, sans-serif;
             color: #333;
         }
 
+        /* Estilo da barra de navegação */
         .navbar {
             background-color: rgb(56, 127, 57);
         }
 
+        /* Estilo dos links da barra de navegação */
         .navbar-nav .nav-item .nav-link {
             color: white;
             padding: 10px 20px;
@@ -29,10 +33,12 @@
             transition: background-color 0.3s ease-in-out;
         }
 
+        /* Efeito ao passar o mouse sobre os links da navegação */
         .navbar-nav .nav-item .nav-link:hover {
             background-color: rgba(255, 255, 255, 0.1);
         }
 
+        /* Estilo dos cartões */
         .card {
             border-radius: 15px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -40,22 +46,26 @@
             margin-bottom: 30px;
         }
 
+        /* Efeito de zoom ao passar o mouse sobre o cartão */
         .card:hover {
             transform: scale(1.05);
         }
 
+        /* Estilo do título dos cartões */
         .card-title {
             font-weight: 700;
             font-size: 1.25rem;
             color: rgb(56, 127, 57);
         }
 
+        /* Estilo do texto dos cartões */
         .card-body p {
             font-size: 1rem;
             line-height: 1.6;
             font-weight: 300;
         }
 
+        /* Estilo da imagem no rodapé */
         .rodape-imagem img {
             width: 100%;
             height: auto;
@@ -65,25 +75,32 @@
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
         }
 
+        /* Estilo da imagem no topo do cartão */
         .card-img-top {
             border-radius: 15px 15px 0 0;
         }
     </style>
 </head>
 <body>
+    <!-- Barra de navegação -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">
+            <!-- Logo na barra de navegação -->
             <img src="imagens/WhatsApp Image 2024-08-12 at 11.50.27.jpeg" width="80" height="80" alt="">
         </a>
+        <!-- Botão de menu para dispositivos móveis -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Links de navegação -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+                <!-- Link para a página inicial -->
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
+                <!-- Dropdown para galeria de fotos -->
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGaleria" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeria de fotos</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownGaleria">
@@ -91,12 +108,14 @@
                         <a class="dropdown-item" href="videos.html">Vídeos</a>
                     </div>
                 </li>
+                <!-- Dropdown para artigos -->
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownArtigos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Artigos</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownArtigos">
                         <a class="dropdown-item" href="atualidade.html">Atualidades</a>
                     </div>
                 </li>
+                <!-- Dropdown para cultura brasileira -->
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCultura" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cultura Brasileira</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownCultura">
@@ -109,48 +128,61 @@
         </div>
     </nav>
 
+    <!-- Container para os cartões -->
     <div class="container mt-5">
         <div class="row justify-content-center">
+            <!-- Cartão para a Região Norte -->
             <div class="card col-sm-12 col-md-4" style="width: 18rem;">
                 <img class="card-img-top" src="imagens/n.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Norte</h5>
-                    <a href="https://open.spotify.com/playlist/5v8PqO7dQQPW5pR3MfVVbV?si=b569a971b4184bbb" class="btn btn-primary" target=”_blank” à tag>Ouça agora</a>
+                    <!-- Botão para ouvir playlist da Região Norte -->
+                    <a href="https://open.spotify.com/playlist/5v8PqO7dQQPW5pR3MfVVbV?si=b569a971b4184bbb" class="btn btn-primary" target=”_blank”>Ouça agora</a>
                 </div>
             </div>
+            <!-- Cartão para a Região Nordeste -->
             <div class="card col-sm-12 col-md-4" style="width: 18rem;">
                 <img class="card-img-top" src="imagens/a.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Nordeste</h5>
-                    <a href="https://open.spotify.com/playlist/32edMRoSQGUw2GYorb6ws5?si=ef831bd4cf124716" class="btn btn-primary" target=”_blank” à tag>Ouça agora</a>
+                    <!-- Botão para ouvir playlist da Região Nordeste -->
+                    <a href="https://open.spotify.com/playlist/32edMRoSQGUw2GYorb6ws5?si=ef831bd4cf124716" class="btn btn-primary" target=”_blank”>Ouça agora</a>
                 </div>
             </div>
+            <!-- Cartão para a Região Centro-Oeste -->
             <div class="card col-sm-12 col-md-4" style="width: 18rem;">
                 <img class="card-img-top" src="imagens/co.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Centro-Oeste</h5>
-                    <a href="https://open.spotify.com/playlist/6SXWTDpcu10bopX4Rafs5l?si=d1385bfd25d44b4e" class="btn btn-primary" target=”_blank” à tag>Ouça agora</a>            
-                    </div>
+                    <!-- Botão para ouvir playlist da Região Centro-Oeste -->
+                    <a href="https://open.spotify.com/playlist/6SXWTDpcu10bopX4Rafs5l?si=d1385bfd25d44b4e" class="btn btn-primary" target=”_blank”>Ouça agora</a>            
+                </div>
             </div>
         </div>
 
         <div class="row justify-content-center mt-5">
+            <!-- Cartão para a Região Sudeste -->
             <div class="card col-sm-12 col-md-4" style="width: 18rem;">
                 <img class="card-img-top" src="imagens/sd.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Sudeste</h5>
-                    <a href="https://open.spotify.com/playlist/7eDuKuX3nhGqaahCLp1tBR?si=cecbfb008c934fa6" class="btn btn-primary" target=”_blank” à tag>Ouça agora</a>                </div>
+                    <!-- Botão para ouvir playlist da Região Sudeste -->
+                    <a href="https://open.spotify.com/playlist/7eDuKuX3nhGqaahCLp1tBR?si=cecbfb008c934fa6" class="btn btn-primary" target=”_blank”>Ouça agora</a>
+                </div>
             </div>
+            <!-- Cartão para a Região Sul -->
             <div class="card col-sm-12 col-md-4" style="width: 18rem;">
                 <img class="card-img-top" src="imagens/s.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Sul</h5>
-                    <a href="https://open.spotify.com/playlist/23AOL2rTuMpQBsrusXoYki?si=593fb58d57914f9f" class="btn btn-primary" target=”_blank” à tag>Ouça agora</a>                </div>
+                    <!-- Botão para ouvir playlist da Região Sul -->
+                    <a href="https://open.spotify.com/playlist/23AOL2rTuMpQBsrusXoYki?si=593fb58d57914f9f" class="btn btn-primary" target=”_blank”>Ouça agora</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Modal (janela pop-up) -->
     <div class="modal fade" id="id_modal123" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -170,11 +202,12 @@
         </div>
     </div>
 
+    <!-- Imagem no rodapé -->
     <div class="rodape-imagem">
         <img src="imagens/WhatsApp Image 2024-08-13 at 08.03.14.jpeg" alt="Rodapé Imagem" class="img-fluid">
     </div>
 
-    <!-- LIBRAS -->
+    <!-- Plugin VLibras para acessibilidade em LIBRAS -->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
