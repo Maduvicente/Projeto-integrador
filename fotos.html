@@ -37,27 +37,34 @@
             background-color: rgba(255, 255, 255, 0.1);
         }
 
+        /* Estilo para a galeria de fotos */
+        .img-thumbnail {
+            margin: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .img-thumbnail:hover {
+            transform: scale(1.05);
+        }
+
         /* Estilo para a imagem do rodapé */
         .rodape-imagem img {
             width: 100%;
             height: auto;
             display: block;
             margin-top: 40px;
-            border-radius: 0px;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
         }
-
     </style>
 </head>
 <body>
     <!-- Barra de navegação -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <!-- Logo da navbar -->
-        <nav class="navbar">
-            <a class="navbar-brand" href="#">
-                <img src="imagens/WhatsApp Image 2024-08-12 at 11.50.27.jpeg" width="80" height="80" alt="">
-            </a>
-        </nav>
+        <a class="navbar-brand" href="#">
+            <img src="imagens/WhatsApp Image 2024-08-12 at 11.50.27.jpeg" width="80" height="80" alt="Logo">
+        </a>
         <!-- Botão para expandir a navbar em telas pequenas -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -69,27 +76,27 @@
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Galeria de fotos
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Galeria de Fotos
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
                         <a class="dropdown-item" href="fotos.html">Fotos</a>
                         <a class="dropdown-item" href="videos.html">Vídeos</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Artigos
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
                         <a class="dropdown-item" href="atualidade.html">Atualidades</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Cultura Brasileira 
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
                         <a class="dropdown-item" href="tradições.html">Tradições</a>
                         <a class="dropdown-item" href="culinária.html">Culinária</a>
                         <a class="dropdown-item" href="música.html">Música</a>
@@ -101,65 +108,62 @@
 
     <!-- Galeria de Fotos -->
     <div class="container mt-5">
-        <h2 class="text-center mb-5">Galeria de Fotos</h2>
+        <h2 style="font-family: 'Arial', sans-serif;" class="text-center mb-5">Galeria de Fotos</h2>
         <div class="row">
-            <!-- Card da Foto 1 -->
-            <div class="col-sm-12 col-md-4">
-                <div class="card">
-                    <img class="card-img-top" src="imagens/1.png" alt="Foto 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Título da Foto 1</h5>
-                    </div>
-                </div>
+            <!-- Blocos de imagens organizados em grid para melhor responsividade -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="imagens/g1.jpeg" class="img-thumbnail" alt="Foto 1">
             </div>
-            <!-- Card da Foto 2 -->
-            <div class="col-sm-12 col-md-4">
-                <div class="card">
-                    <img class="card-img-top" src="Imagem/JD8-2742-026_zoom1.webp" alt="Foto 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Título da Foto 2</h5>
-                    </div>
-                </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="imagens/g2.jpeg" class="img-thumbnail" alt="Foto 2">
             </div>
-            <!-- Card da Foto 3 -->
-            <div class="col-sm-12 col-md-4">
-                <div class="card">
-                    <img class="card-img-top" src="Imagem/JD8-2730-026_zoom1.webp" alt="Foto 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Título da Foto 3</h5>
-                    </div>
-                </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="imagens/g3.jpeg" class="img-thumbnail" alt="Foto 3">
             </div>
-        </div>
-        
-        <!-- Segunda linha de cards -->
-        <div class="row mt-4">
-            <!-- Card da Foto 4 -->
-            <div class="col-sm-12 col-md-4">
-                <div class="card">
-                    <img class="card-img-top" src="Imagem/JD8-2731-026_zoom1.webp" alt="Foto 4">
-                    <div class="card-body">
-                        <h5 class="card-title">Título da Foto 4</h5>
-                    </div>
-                </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="imagens/g4.jpeg" class="img-thumbnail" alt="Foto 4">
             </div>
-            <!-- Card da Foto 5 -->
-            <div class="col-sm-12 col-md-4">
-                <div class="card">
-                    <img class="card-img-top" src="Imagem/D65-5224-120_zoom1.webp" alt="Foto 5">
-                    <div class="card-body">
-                        <h5 class="card-title">Título da Foto 5</h5>
-                    </div>
-                </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="imagens/g5.jpeg" class="img-thumbnail" alt="Foto 5">
             </div>
-            <!-- Card da Foto 6 -->
-            <div class="col-sm-12 col-md-4">
-                <div class="card">
-                    <img class="card-img-top" src="Imagem/JD8-2800-026_zoom2.webp" alt="Foto 6">
-                    <div class="card-body">
-                        <h5 class="card-title">Título da Foto 6</h5>
-                    </div>
-                </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="imagens/g6.jpeg" class="img-thumbnail" alt="Foto 6">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="imagens/g7.jpeg" class="img-thumbnail" alt="Foto 7">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="imagens/g8.jpeg" class="img-thumbnail" alt="Foto 8">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="imagens/g9.jpeg" class="img-thumbnail" alt="Foto 9">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="imagens/g10.jpeg" class="img-thumbnail" alt="Foto 10">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="imagens/g11.jpeg" class="img-thumbnail" alt="Foto 11">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="imagens/g12.jpeg" class="img-thumbnail" alt="Foto 12">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="imagens/g13.jpeg" class="img-thumbnail" alt="Foto 13">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="imagens/g14.jpeg" class="img-thumbnail" alt="Foto 14">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="imagens/g15.jpeg" class="img-thumbnail" alt="Foto 15">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="imagens/g16.jpeg" class="img-thumbnail" alt="Foto 16">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="imagens/g17.jpeg" class="img-thumbnail" alt="Foto 17">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="imagens/g18.jpeg" class="img-thumbnail" alt="Foto 18">
             </div>
         </div>
     </div>
