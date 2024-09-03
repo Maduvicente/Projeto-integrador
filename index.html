@@ -1,200 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Integrador</title>
-    <link rel="shortcut icon" href="imagens/icons8-brasil-48.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Integrador</title>
+  <link rel="shortcut icon" href="imagens/icons8-brasil-48.png" type="image/x-icon">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <style>
-      /* Remove margens e preenchimentos do corpo e do html */
-      html, body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; /* Evita rolagem horizontal */
-      }
-      .navbar {
-            background-color: rgb(56, 127, 57);
-        }
+  <style>
+    /* Remove margens e preenchimentos do corpo e do html */
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      /* Evita rolagem horizontal */
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-        .navbar-nav .nav-item .nav-link {
-            color: white;
-            padding: 10px 20px;
-            border-radius: 8px;
-            transition: background-color 0.3s ease-in-out;
-        }
+    .navbar {
+      background-color: rgb(56, 127, 57);
+    }
 
-        .navbar-nav .nav-item .nav-link:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-      .navbar {
-        background-color: rgb(56, 127, 57);
-        margin-bottom: 0; /* Remove margens do navbar */
-      }
+    .navbar-nav .nav-item .nav-link {
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease-in-out;
+    }
 
-      /* Ajuste para o efeito parallax */
-      .parallax {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-        margin-bottom: 0; /* Remove margens abaixo do parallax */
-      }
+    .navbar-nav .nav-item .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
 
-      .parallax-1 {
-        background-image: url('imagens/WhatsApp Image 2024-08-13 at 10.25.13.jpeg');
-      }
+    .navbar {
+      background-color: rgb(56, 127, 57);
+      margin-bottom: 0;
+      /* Remove margens do navbar */
+    }
 
-      .parallax-2 {
-        background-image: url('imagens/WhatsApp\ Image\ 2024-08-26\ at\ 14.59.42.jpeg');
-      }
+    /* Ajuste para o efeito parallax */
+    .parallax {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      margin-bottom: 0;
+      /* Remove margens abaixo do parallax */
+    }
 
-      .parallax-3 {
-        background-image: url('imagens/WhatsApp Image 2024-08-13 at 10.25.13.jpeg');
-      }
+    .parallax-1 {
+      background-image: url('imagens/WhatsApp Image 2024-08-13 at 10.25.13.jpeg');
+    }
 
-      .content {
-        background-color: rgb(213, 232, 167);
-        padding: 50px 20px;
-        margin: 0; /* Remove margens */
-        width: 100%; /* Garante que a largura ocupe 100% da tela */
-        box-sizing: border-box; /* Inclui o padding e a borda na largura e altura do elemento */
-      }
+    .parallax-2 {
+      background-image: url('imagens/WhatsApp\ Image\ 2024-09-03\ at\ 10.14.54.jpeg');
+    }
 
-      .rodape-imagem {
-        margin: 0; /* Remove margens ao redor do rodapé */
-      }
+    .parallax-3 {
+      background-image: url('imagens/WhatsApp\ Image\ 2024-09-03\ at\ 10.36.00.jpeg');
+    }
 
-      .rodape-imagem img {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: 0; /* Remove margens ao redor da imagem */
-      }
+    .content {
+      background-color: rgb(213, 232, 167);
+      padding: 50px 20px;
+      margin: 0;
+      /* Remove margens */
+      width: 100%;
+      /* Garante que a largura ocupe 100% da tela */
+      box-sizing: border-box;
+      /* Inclui o padding e a borda na largura e altura do elemento */
+    }
 
-      h2 {
-        font-size: 28px;
-        margin-bottom: 20px;
-      }
+    .rodape-imagem {
+      margin: 0;
+      /* Remove margens ao redor do rodapé */
+    }
 
-      p {
-        font-size: 18px;
-        line-height: 1.6;
-        margin-bottom: 20px;
-      }
+    .rodape-imagem img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0;
+      /* Remove margens ao redor da imagem */
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    /* Estilo para imagens dentro da seção de conteúdo */
+    .content img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 20px;
+    }
+
+    .conteudo {
+      background-color: #e3e8dd;
+      color: rgb(13, 66, 13);
+      text-align: justify;
+      padding: 50px 200px 40px 200px;
       
-      /* Estilo para imagens dentro da seção de conteúdo */
-      .content img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin-top: 20px;  
-      }
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
 
-      .conteudo{
-            background-color: #e3e8dd;
-            color: rgb(13, 66, 13); 
-            text-align: justify;
-            padding: 50px 100px 40px 100px;
-            background-image: url(imagens/mold01.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            }       
-    </style>
+    }
+  </style>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <a class="navbar-brand" href="#">
-        <img src="imagens/WhatsApp Image 2024-08-12 at 11.50.27.jpeg" width="80" height="80" alt="Logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Galeria de fotos
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="fotos.html">Fotos</a>
-              <a class="dropdown-item" href="videos.html">Vídeos</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Artigos
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="atualidade.html">Atualidades</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Cultura Brasileira 
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="tradições.html">Tradições</a>
-              <a class="dropdown-item" href="culinária.html">Culinária</a>
-              <a class="dropdown-item" href="música.html">Música</a>
-            </div>
-          </li>
-        </ul>
-        <!--
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="imagens/WhatsApp Image 2024-08-12 at 11.50.27.jpeg" width="80" height="80" alt="Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Galeria 
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="fotos.html">Fotos</a>
+            <a class="dropdown-item" href="videos.html">Vídeos</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Artigos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="atualidade.html">Documentários</a>
+            <a class="dropdown-item" href="atualidade.html">Filmes</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Cultura Brasileira
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="tradições.html">Tradições</a>
+            <a class="dropdown-item" href="culinária.html">Culinária</a>
+            <a class="dropdown-item" href="música.html">Música</a>
+          </div>
+        </li>
+      </ul>
+      <!--
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
         </form>
         -->
-      </div>
-    </nav>
-
-    <div class="parallax parallax-1"></div>
-
-    <div class="conteudo">
-      <p>"Brasil em Cores" é um site informativo dedicado a explorar e celebrar a rica diversidade cultural do Brasil. Com uma ampla gama de conteúdos, o site oferece artigos, vídeos, e fotos que destacam as tradições, festividades, gastronomia, música, e artes de diversas regiões do país.</p> 
     </div>
+  </nav>
 
-    <div class="parallax parallax-2"></div>
+  <div class="parallax parallax-1"></div>
 
-    <div class="conteudo">
-      <p>
-        "Brasil em Cores" busca promover o conhecimento e a valorização das diferentes culturas brasileiras, proporcionando aos visitantes uma imersão nas cores, sabores e sons que compõem a identidade multifacetada do Brasil.
-      </p>
-    </div>
+  <div class="conteudo">
+    <p>"Brasil em Cores" é uma plataforma dedicada a explorar e celebrar a riqueza e a complexidade da diversidade cultural do Brasil. Com uma abordagem abrangente e acessível, o site oferece uma vasta coleção de conteúdos, incluindo artigos informativos, vídeos emocionantes e fotografias cativantes que retratam as tradições, festividades, gastronomia, música e expressões artísticas das diferentes regiões do país.</p>
+    <p>O site é um verdadeiro tesouro para quem deseja se aprofundar nas múltiplas facetas do Brasil, proporcionando uma viagem virtual que passa pelas danças vibrantes do Nordeste, os sabores exóticos da Amazônia, as influências indígenas e africanas que moldam a cultura local, e as celebrações únicas que transformam as ruas do país em um espetáculo de cores e alegria.</p> 
+    <p>Além de servir como uma fonte de conhecimento e inspiração, "Brasil em Cores" também busca fomentar o respeito e a valorização das culturas regionais, mostrando como cada parte do Brasil contribui para a riqueza e a diversidade que tornam a nação tão singular. Seja para estudantes, turistas, ou qualquer pessoa interessada em aprender mais sobre o Brasil, o site oferece uma experiência envolvente que conecta o visitante diretamente com o coração cultural do país.</p>
+  </div>
 
-    <div class="parallax parallax-3"></div>
+  <div class="parallax parallax-2"></div>
 
+  <div class="conteudo">
+    <p>"Brasil em Cores" tem como missão promover o conhecimento e a valorização das diversas culturas que compõem o rico mosaico cultural do Brasil. Através de uma curadoria cuidadosa de conteúdos, o site oferece aos visitantes uma verdadeira imersão nas cores vibrantes, nos sabores únicos e nos sons envolventes que formam a identidade multifacetada do país.</p>
+    <p>Ao explorar as páginas de "Brasil em Cores", os visitantes são convidados a embarcar em uma jornada cultural que revela as tradições locais, as festas populares, as expressões artísticas e as riquezas gastronômicas de cada região. O site destaca não apenas as manifestações culturais mais conhecidas, mas também aquelas menos exploradas, proporcionando uma visão abrangente e inclusiva da diversidade cultural brasileira.</p>
+    <P>Com cada clique, os visitantes têm a oportunidade de se conectar mais profundamente com o Brasil, descobrindo as histórias, as práticas e os costumes que fazem parte do cotidiano das pessoas em todo o país. "Brasil em Cores" busca, acima de tudo, inspirar um respeito e uma admiração renovada pela riqueza cultural do Brasil, celebrando a beleza e a complexidade que tornam a nação única no mundo.</P>
     
+  </div>
 
-    <div class="rodape-imagem">
-      <img src="imagens/WhatsApp Image 2024-08-13 at 08.03.14.jpeg" alt="Rodapé Imagem" class="img-fluid">
+  <div class="parallax parallax-3"></div>
+
+
+
+ 
+
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
     </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 
-    
-    <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-      </div>
-    </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-
-    <!-- Importando o jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl7Jt+Iep6Tt8bgzM1+UAdwD1KkLaa72qVkkTdzOsy4TrH+8I9Q8Iebhndg" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- Importando o jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl7Jt+Iep6Tt8bgzM1+UAdwD1KkLaa72qVkkTdzOsy4TrH+8I9Q8Iebhndg"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
