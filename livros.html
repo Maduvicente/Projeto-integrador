@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Integrador</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="imagens/icons8-brasil-48.png" type="image/x-icon">
-    
+
     <!-- Importando a fonte original (Arial) do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
     <!-- Importando o Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <style>
         /* Estilo do corpo da página */
@@ -24,7 +26,7 @@
         /* Estilo da barra de navegação */
         .navbar {
             background-color: rgb(56, 127, 57);
-            font-family::'Courier New', Courier, monospace;
+            font-family: :'Courier New', Courier, monospace;
         }
 
         /* Estilo dos links da barra de navegação */
@@ -82,6 +84,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Barra de navegação -->
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -90,7 +93,8 @@
             <img src="imagens/WhatsApp Image 2024-08-12 at 11.50.27.jpeg" width="80" height="80" alt="">
         </a>
         <!-- Botão de menu para dispositivos móveis -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -103,7 +107,8 @@
                 </li>
                 <!-- Dropdown para galeria de fotos -->
                 <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGaleria" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeria</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGaleria" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeria</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownGaleria">
                         <a class="dropdown-item" href="fotos.html">Fotos</a>
                         <a class="dropdown-item" href="videos.html">Vídeos</a>
@@ -111,14 +116,16 @@
                 </li>
                 <!-- Dropdown para artigos -->
                 <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownArtigos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Literatura</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownArtigos" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Literatura</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownArtigos">
                         <a class="dropdown-item" href="livros.html">Livros</a>
                     </div>
                 </li>
                 <!-- Dropdown para cultura brasileira -->
                 <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCultura" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cultura Brasileira</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCultura" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cultura Brasileira</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownCultura">
                         <a class="dropdown-item" href="tradições.html">Tradições</a>
                         <a class="dropdown-item" href="culinária.html">Culinária</a>
@@ -128,80 +135,197 @@
             </ul>
         </div>
     </nav>
-    <!-- Container para os cartões -->
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <!-- Cartão para a Região Norte -->
-            <div class="card col-sm-12 col-md-4" style="width: 18rem;">
-                <img class="card-img-top" src="imagens/n.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Norte</h5>
-                    <!-- Botão para ouvir playlist da Região Norte -->
-                    <a href="https://open.spotify.com/playlist/5v8PqO7dQQPW5pR3MfVVbV?si=b569a971b4184bbb" class="btn btn-primary" target=”_blank”>Ouça agora</a>
-                </div>
-            </div>
-            <!-- Cartão para a Região Nordeste -->
-            <div class="card col-sm-12 col-md-4" style="width: 18rem;">
-                <img class="card-img-top" src="imagens/a.png" alt="..">
-                <div class="card-body">
-                    <h5 class="card-title">Nordeste</h5>
-                    <!-- Botão para ouvir playlist da Região Nordeste -->
-                    <a href="https://open.spotify.com/playlist/32edMRoSQGUw2GYorb6ws5?si=ef831bd4cf124716" class="btn btn-primary" target=”_blank”>Ouça agora</a>
-                </div>
-            </div>
-            <!-- Cartão para a Região Centro-Oeste -->
-            <div class="card col-sm-12 col-md-4" style="width: 18rem;">
-                <img class="card-img-top" src="imagens/co.png" alt="..">
-                <div class="card-body">
-                    <h5 class="card-title">Centro-Oeste</h5>
-                    <!-- Botão para ouvir playlist da Região Centro-Oeste -->
-                    <a href="https://open.spotify.com/playlist/6SXWTDpcu10bopX4Rafs5l?si=d1385bfd25d44b4e" class="btn btn-primary" target=”_blank”>Ouça agora</a>            
-                </div>
-            </div>
-        </div>
 
-        <div class="row justify-content-center mt-5">
-            <!-- Cartão para a Região Sudeste -->
-            <div class="card col-sm-12 col-md-4" style="width: 18rem;">
-                <img class="card-img-top" src="imagens/sd.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Sudeste</h5>
-                    <!-- Botão para ouvir playlist da Região Sudeste -->
-                    <a href="https://open.spotify.com/playlist/7eDuKuX3nhGqaahCLp1tBR?si=cecbfb008c934fa6" class="btn btn-primary" target=”_blank”>Ouça agora</a>
-                </div>
-            </div>
-            <!-- Cartão para a Região Sul -->
-            <div class="card col-sm-12 col-md-4" style="width: 18rem;">
-                <img class="card-img-top" src="imagens/s.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Sul</h5>
-                    <!-- Botão para ouvir playlist da Região Sul -->
-                    <a href="https://open.spotify.com/playlist/23AOL2rTuMpQBsrusXoYki?si=593fb58d57914f9f" class="btn btn-primary" target=”_blank”>Ouça agora</a>
-                </div>
-            </div>
+
+    <br>
+
+    <div class="row justify-content-center">
+
+    <div class="card m-3" style="width: 18rem;">
+        <img src="imagens/WhatsApp Image 2024-09-09 at 10.28.08.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">O Cortiço</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Leia Mais</a>
         </div>
     </div>
 
-    <!-- Modal (janela pop-up) -->
-    <div class="modal fade" id="id_modal123" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">O Cortiço</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Modal body text goes here.</p>
+                    •	"O Cortiço", de Aluísio Azevedo, é um romance naturalista publicado em 1890 que retrata a vida em um cortiço, um tipo de habitação coletiva popular no Rio de Janeiro. A obra apresenta uma visão crítica da sociedade carioca do século XIX, explorando questões como a desigualdade social, a influência do meio ambiente na formação do caráter e o impacto da pobreza na vida das pessoas. O enredo gira em torno das histórias de moradores do cortiço, abordando temas como exploração, vícios e conflitos sociais, e utiliza uma narrativa rica em detalhes para destacar as condições desumanas e a luta pela sobrevivência.
+A diversidade cultural brasileira é apresentada na obra como diversidade étnica, onde no cortiço há a presença de origens variadas, como portugueses, africanos, brasileiros mestiços e outros imigrantes. A presença desses grupos reflete a mistura cultural e étnica característica do Brasil.
+A obra mostra como as tradições e costumes de cada grupo influenciam a vida no cortiço, desde as práticas religiosas até os hábitos diários e a alimentação. Isso ilustra a maneira como a diversidade cultural se manifesta na vida cotidiana.
+
+
+Qual movimento faz parte? 
+O Naturalismo e o Realismo no Brasil surgiram no final do século XIX e trouxeram uma abordagem mais científica e crítica para a literatura, em contraste com o idealismo romântico que predominava anteriormente.
+O Realismo brasileiro, influenciado pelo Realismo europeu, foca na representação detalhada da vida cotidiana e nas questões sociais. Os autores desse período buscam uma narrativa objetiva e crítica, que expõe a realidade sem idealizações.
+Machado de Assis: Considerado o maior nome do Realismo no Brasil, suas obras, como "Memórias Póstumas de Brás Cubas" e "Dom Casmurro", exploram a complexidade psicológica dos personagens e criticam a sociedade carioca da época com ironia e perspicácia.
+O Naturalismo no Brasil se caracteriza pela ênfase na influência do meio ambiente e da hereditariedade sobre o comportamento humano. Os autores naturalistas utilizam métodos científicos para descrever a vida e as condições sociais, frequentemente retratando as condições precárias e os vícios da sociedade.
+Aluísio Azevedo: É o principal autor naturalista brasileiro, conhecido por seu romance "O Cortiço", que oferece uma visão detalhada e crítica das condições de vida em um cortiço carioca, destacando a influência do ambiente e da pobreza na vida dos personagens.
+Joaquim Maria Machado de Assis: Embora seja mais associado ao Realismo, suas obras também contêm elementos naturalistas, especialmente em sua análise das condições sociais e psicológicas dos personagens.
+
+                
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    
                 </div>
             </div>
         </div>
     </div>
 
+
+
+
+    <div class="card m-3" style="width: 18rem;">
+        <img src="imagens/WhatsApp Image 2024-09-09 at 10.28.08.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Iracema</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal_ira">Leia Mais</a>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal_ira" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Iracema</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, excepturi! Qui delectus obcaecati, rem distinctio suscipit, repudiandae molestias aliquam est eveniet officia iste, incidunt vero quia! Debitis sit voluptatem maiores?
+                    loren
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, vel repellat nobis nisi temporibus neque aliquid tempora. Deserunt, quibusdam ratione blanditiis repudiandae accusantium aliquid totam nam nisi, minima qui architecto.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, excepturi! Qui delectus obcaecati, rem distinctio suscipit, repudiandae molestias aliquam est eveniet officia iste, incidunt vero quia! Debitis sit voluptatem maiores?
+                    loren
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, vel repellat nobis nisi temporibus neque aliquid tempora. Deserunt, quibusdam ratione blanditiis repudiandae accusantium aliquid totam nam nisi, minima qui architecto.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, excepturi! Qui delectus obcaecati, rem distinctio suscipit, repudiandae molestias aliquam est eveniet officia iste, incidunt vero quia! Debitis sit voluptatem maiores?
+                    loren
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, vel repellat nobis nisi temporibus neque aliquid tempora. Deserunt, quibusdam ratione blanditiis repudiandae accusantium aliquid totam nam nisi, minima qui architecto.
+                
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card m-3" style="width: 18rem;">
+        <img src="imagens/WhatsApp Image 2024-09-09 at 10.28.08.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">O Cortiço</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Leia Mais</a>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">O Cortiço</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, excepturi! Qui delectus obcaecati, rem distinctio suscipit, repudiandae molestias aliquam est eveniet officia iste, incidunt vero quia! Debitis sit voluptatem maiores?
+                    loren
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, vel repellat nobis nisi temporibus neque aliquid tempora. Deserunt, quibusdam ratione blanditiis repudiandae accusantium aliquid totam nam nisi, minima qui architecto.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, excepturi! Qui delectus obcaecati, rem distinctio suscipit, repudiandae molestias aliquam est eveniet officia iste, incidunt vero quia! Debitis sit voluptatem maiores?
+                    loren
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, vel repellat nobis nisi temporibus neque aliquid tempora. Deserunt, quibusdam ratione blanditiis repudiandae accusantium aliquid totam nam nisi, minima qui architecto.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, excepturi! Qui delectus obcaecati, rem distinctio suscipit, repudiandae molestias aliquam est eveniet officia iste, incidunt vero quia! Debitis sit voluptatem maiores?
+                    loren
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, vel repellat nobis nisi temporibus neque aliquid tempora. Deserunt, quibusdam ratione blanditiis repudiandae accusantium aliquid totam nam nisi, minima qui architecto.
+                
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card m-3" style="width: 18rem;">
+        <img src="imagens/WhatsApp Image 2024-09-09 at 10.28.08.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">O Cortiço</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Leia Mais</a>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">O Cortiço</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, excepturi! Qui delectus obcaecati, rem distinctio suscipit, repudiandae molestias aliquam est eveniet officia iste, incidunt vero quia! Debitis sit voluptatem maiores?
+                    loren
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, vel repellat nobis nisi temporibus neque aliquid tempora. Deserunt, quibusdam ratione blanditiis repudiandae accusantium aliquid totam nam nisi, minima qui architecto.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, excepturi! Qui delectus obcaecati, rem distinctio suscipit, repudiandae molestias aliquam est eveniet officia iste, incidunt vero quia! Debitis sit voluptatem maiores?
+                    loren
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, vel repellat nobis nisi temporibus neque aliquid tempora. Deserunt, quibusdam ratione blanditiis repudiandae accusantium aliquid totam nam nisi, minima qui architecto.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, excepturi! Qui delectus obcaecati, rem distinctio suscipit, repudiandae molestias aliquam est eveniet officia iste, incidunt vero quia! Debitis sit voluptatem maiores?
+                    loren
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, vel repellat nobis nisi temporibus neque aliquid tempora. Deserunt, quibusdam ratione blanditiis repudiandae accusantium aliquid totam nam nisi, minima qui architecto.
+                
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    
     <!-- Imagem no rodapé -->
     <div class="rodape-imagem">
         <img src="imagens/WhatsApp Image 2024-08-13 at 08.03.14.jpeg" alt="Rodapé Imagem" class="img-fluid">
@@ -220,10 +344,17 @@
     </script>
 
     <!-- Importando o jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
     <!-- Importando o js do Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
