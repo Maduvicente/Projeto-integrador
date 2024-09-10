@@ -58,18 +58,57 @@
             color: rgb(56, 127, 57); /* Cor do título */
         }
 
-        /* Estilo do texto do card */
+        /* Estilo da barra de navegação */
+        .navbar {
+            background-color: rgb(56, 127, 57);
+            font-family: :'Courier New', Courier, monospace;
+        }
+
+        /* Estilo dos links da barra de navegação */
+        .navbar-nav .nav-item .nav-link {
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        /* Efeito ao passar o mouse sobre os links da navegação */
+        .navbar-nav .nav-item .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Estilo dos cartões */
+        .card {
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 30px;
+        }
+
+        /* Efeito de zoom ao passar o mouse sobre o cartão */
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilo do título dos cartões */
+        .card-title {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: rgb(56, 127, 57);
+        }
+
+        /* Estilo do texto dos cartões */
         .card-body p {
-            font-size: 1rem; /* Tamanho da fonte do texto */
-            line-height: 1.6; /* Altura da linha do texto */
-            font-weight: 300; /* Peso da fonte do texto */
+            font-size: 1rem;
+            line-height: 1.6;
+            font-weight: 300;
         }
 
         /* Estilo para o rodapé */
         footer {
             background-color: rgb(56, 127, 57);
             color: white;
-            padding: 20px 0;
+            padding: 10px 0;
             text-align: center;
         }
 
@@ -86,10 +125,6 @@
 
         .social-media a:hover {
             color: #007bff;
-        }
-        /* Estilo das bordas arredondadas da imagem do card */
-        .card-img-top {
-            border-radius: 15px 15px 0 0; /* Bordas arredondadas no topo da imagem */
         }
     </style>
 </head>
@@ -217,21 +252,17 @@
     </div>
 
   <!-- Rodapé -->
- <footer>
-    <p>&copy; 2024 Projeto Integrador. SENAI TM.</p>
+  <footer>
     <div class="social-media">
-        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
-            <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <!-- Adicione mais redes sociais conforme necessário -->
+      <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
     </div>
-</footer>      
+    <p>&copy; 2024 Projeto Integrador. SENAI TM.</p>
+  </footer>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
     <!-- LIBRAS -->
 <div vw class="enabled">
