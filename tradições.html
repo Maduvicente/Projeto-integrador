@@ -65,15 +65,28 @@
             font-weight: 300; /* Peso da fonte do texto */
         }
 
-        /* Estilo da imagem no rodapé */
-        .rodape-imagem img {
-            width: 100%; /* Largura da imagem é 100% do contêiner */
-            height: auto; /* Altura automática para manter a proporção */
-            display: block; /* Exibe a imagem como bloco */
-            margin-top: 40px; /* Espaçamento superior da imagem */
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Sombra da imagem */
+        /* Estilo para o rodapé */
+        footer {
+            background-color: rgb(56, 127, 57);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
         }
 
+        .social-media {
+            margin: 10px 0;
+        }
+
+        .social-media a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+        .social-media a:hover {
+            color: #007bff;
+        }
         /* Estilo das bordas arredondadas da imagem do card */
         .card-img-top {
             border-radius: 15px 15px 0 0; /* Bordas arredondadas no topo da imagem */
@@ -85,7 +98,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">
             <!-- Logo na barra de navegação -->
-            <img src="imagens/WhatsApp Image 2024-08-12 at 11.50.27.jpeg" width="80" height="80" alt="">
+            <img src="imagens/WhatsApp Image 2024-09-09 at 10.09.55.jpeg" width="80" height="80" alt="">
         </a>
         <!-- Botão de menu para dispositivos móveis -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -199,12 +212,26 @@
                 </div>
             </div>
         </div>
+        <br>
+  
     </div>
 
-    <!-- Imagem do rodapé -->
-    <div class="rodape-imagem">
-        <img src="imagens/WhatsApp Image 2024-08-13 at 08.03.14.jpeg" alt="Rodapé Imagem" class="img-fluid">
+  <!-- Rodapé -->
+ <footer>
+    <p>&copy; 2024 Projeto Integrador. SENAI TM.</p>
+    <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <!-- Adicione mais redes sociais conforme necessário -->
     </div>
+</footer>      
 
     <!-- LIBRAS -->
 <div vw class="enabled">
