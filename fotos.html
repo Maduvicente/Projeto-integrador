@@ -81,11 +81,17 @@ p {
   color: #ffffff; /* Cor do texto de direitos autorais */
 }
 
-.custom-img {
-    width: 50%; /* Ajuste a porcentagem conforme necessário */
-    max-width: 600px; /* Ajuste a largura máxima conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
+.banner {
+    width: 100%; /* O banner ocupa toda a largura da tela */
+    overflow: hidden; /* Oculta qualquer parte da imagem que ultrapasse a largura */
 }
+
+.banner img {
+    width: 100%; /* A imagem ocupa toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da altura */
+    display: block; /* Remove espaço abaixo da imagem */
+}
+
 
        
     </style>
@@ -137,7 +143,11 @@ p {
             </ul>
         </div>
     </nav>
-    <img src="imagens/WhatsApp Image 2024-10-28 at 10.25.06.jpeg" class="img-fluid custom-img" alt="...">    <!-- Galeria de Fotos -->
+    <div class="banner">
+        <img src="imagens/WhatsApp Image 2024-10-28 at 10.25.06.jpeg" class="img-fluid" alt="Banner" />
+    </div>
+     
+    <!-- Galeria de Fotos -->
     <div class="container mt-5">
         <h2 style="font-family:'Courier New', Courier, monospace; color: rgb(255, 255, 255);" class="text-center mb-5">Galeria de Fotos</h2>
         <div class="row">
