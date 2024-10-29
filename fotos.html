@@ -81,16 +81,7 @@ p {
   color: #ffffff; /* Cor do texto de direitos autorais */
 }
 
-.banner {
-    width: 100%; /* O banner ocupa toda a largura da tela */
-    overflow: hidden; /* Oculta qualquer parte da imagem que ultrapasse a largura */
-}
 
-.banner img {
-    width: 100%; /* A imagem ocupa toda a largura do contêiner */
-    height: auto; /* Mantém a proporção da altura */
-    display: block; /* Remove espaço abaixo da imagem */
-}
 
 
        
@@ -98,58 +89,64 @@ p {
 </head>
 
 <body>
-    <!-- Barra de navegação -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="#">
-            <!-- Logo na barra de navegação -->
-            <img src="imagens/WhatsApp Image 2024-09-09 at 10.09.55.jpeg" width="80" height="80" alt="">
+          <img src="imagens/WhatsApp Image 2024-09-09 at 10.09.55.jpeg" width="80" height="80" alt="Logo">
         </a>
-        <!-- Botão de menu para dispositivos móveis -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Links de navegação -->
+    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <!-- Link para a página inicial -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="explore.html">Explore<span class="sr-only">(current)</span></a>
-                  </li>
-                <!-- Dropdown para galeria de fotos -->
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGaleria" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeria</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownGaleria">
-                        <a class="dropdown-item" href="fotos.html">Fotos</a>
-                        <a class="dropdown-item" href="videos.html">Vídeos</a>
-                    </div>
-                </li>
-                <!-- Dropdown para artigos -->
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownArtigos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Literatura</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownArtigos">
-                        <a class="dropdown-item" href="livros.html">Livros</a>
-                    </div>
-                </li>
-                <!-- Dropdown para cultura brasileira -->
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCultura" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cultura Brasileira</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownCultura">
-                        <a class="dropdown-item" href="tradições.html">Tradições</a>
-                        <a class="dropdown-item" href="culinária.html">Culinária</a>
-                        <a class="dropdown-item" href="música.html">Música</a>
-                    </div>
-                </li>
-            </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="explore.html">Explore<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Galeria 
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="fotos.html">Fotos</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Literatura
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="livros.html">Livros</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Cultura Brasileira
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="tradições.html">Tradições</a>
+                <a class="dropdown-item" href="culinária.html">Culinária</a>
+                <a class="dropdown-item" href="música.html">Música</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="podcast.html">Podcast<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <!--
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            -->
         </div>
-    </nav>
-    <div class="banner">
-        <a href="música.html"><img src="imagens/WhatsApp Image 2024-10-28 at 10.25.06.jpeg" class="media-object  img-responsive img"></a>
-
-    </div>
+      </nav>
 
     <!-- Galeria de Fotos -->
     <div class="container mt-5">
