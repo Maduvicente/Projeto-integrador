@@ -20,6 +20,9 @@
       font-family: Arial, Helvetica, sans-serif;
       color: #333;
       background-image: url('imagens/c5.png');
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     /* Estilo da barra de navegação */
@@ -35,11 +38,17 @@
       transition: background-color 0.3s ease-in-out;
     }
 
+    /* Estilo para o conteúdo principal */
+    .container {
+      flex: 1;
+    }
+
     /* Estilo para o rodapé */
     footer {
       text-align: center;
       padding: 20px;
       background-color: rgb(56, 127, 57);
+      width: 100%;
     }
 
     .social-media {
@@ -68,86 +77,82 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">
-          <img src="imagens/WhatsApp Image 2024-09-09 at 10.09.55.jpeg" width="80" height="80" alt="Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="explore.html">Explore<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="podcast.html">Podcast<span class="sr-only">(current)</span></a>
-              </li>
-            <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Galeria 
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="fotos.html">Fotos</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Literatura
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="livros.html">Livros</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Cultura Brasileira
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="tradições.html">Tradições</a>
-                <a class="dropdown-item" href="culinária.html">Culinária</a>
-                <a class="dropdown-item" href="música.html">Música</a>
-              </div>
-            </li>
-            
-          </ul>
-          <!--
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            -->
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="imagens/WhatsApp Image 2024-09-09 at 10.09.55.jpeg" width="80" height="80" alt="Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="explore.html">Explore<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="podcast.html">Podcast<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Galeria 
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="fotos.html">Fotos</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Literatura
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="livros.html">Livros</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Cultura Brasileira
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="tradições.html">Tradições</a>
+            <a class="dropdown-item" href="culinária.html">Culinária</a>
+            <a class="dropdown-item" href="música.html">Música</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- Seção do Podcast -->
-  <div class="container mt-5">
+  <div class="container mt-5 flex-grow-1">
     <h2 style="font-family:'Courier New', Courier, monospace; color: rgb(255, 255, 255)" class="text-center mb-5">Podcast Brasil em Cores</h2>
     <p class="text-center">Descubra a diversidade cultural do Brasil em nosso podcast! Em cada episódio, exploramos as riquezas e tradições das cinco regiões do país. Conheça mais sobre o Brasil através de conversas, histórias e entrevistas fascinantes.</p>
-    
+
     <!-- Cards dos episódios do podcast -->
-    <div class="row mt-4">
-      <div class="col-sm-12 col-md-4">
-        <div class="card" >
-          <div class="card-body" >
-            <h5 class="card-title">Episódio 1: A Magia da Amazônia</h5>
-            <p class="card-text">Explore a Amazônia, sua biodiversidade e importância cultural, em uma conversa que vai além dos limites da floresta.</p>
-            <a href="episodio1.html" class="btn btn-primary">Ouça Agora</a>
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="imagens/WhatsApp Image 2024-10-29 at 11.56.55.jpeg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
       </div>
-  </div>
-<br>
-   <!-- Rodapé -->
-   <footer>
+    </div>
+
+  <!-- Rodapé -->
+  <footer>
     <div class="social-media">
       <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
       <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
@@ -158,22 +163,21 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-   
-
-    <!-- LIBRAS -->
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
+  <!-- LIBRAS -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
     </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 
-    <!-- Importando o jQuery e JS do Bootstrap -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <!-- Importando o jQuery e JS do Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
+
