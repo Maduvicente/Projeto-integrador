@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria de Fotos</title>
+    <title>Fotos</title>
+    <!-- Favicon -->
     <link rel="shortcut icon" href="imagens/icons8-brasil-48.png" type="image/x-icon">
-    
-    <!-- Fonte original -->
+
+    <!-- Importando a fonte original (Arial) do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Importando o Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <style>
-        /* Estilos gerais da página */
+        /* Estilo do corpo da página */
         body {
             background-color: rgb(217, 236, 172);
             font-family: Arial, sans-serif;
             color: #333;
-            background-image: url('imagens/c4.png');
+            background-image: url('imagens/c1.png');
         }
 
-        /* Estilo para a barra de navegação */
+        /* Estilo da barra de navegação */
         .navbar {
             background-color: rgb(56, 127, 57);
+            font-family: :'Courier New', Courier, monospace;
         }
 
-        /* Estilos para os links da barra de navegação */
+        /* Estilo dos links da barra de navegação */
         .navbar-nav .nav-item .nav-link {
             color: white;
             padding: 10px 20px;
@@ -35,185 +37,287 @@
             transition: background-color 0.3s ease-in-out;
         }
 
-        /* Efeito de hover para os links da barra de navegação */
+        /* Efeito ao passar o mouse sobre os links da navegação */
         .navbar-nav .nav-item .nav-link:hover {
             background-color: rgba(255, 255, 255, 0.1);
         }
 
-        /* Estilo para a galeria de fotos */
-        .img-thumbnail {
-            margin: 10px;
-            border-radius: 8px;
+        /* Estilo dos cartões */
+        .card {
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
+            margin-bottom: 30px;
         }
 
-        .img-thumbnail:hover {
+        /* Efeito de zoom ao passar o mouse sobre o cartão */
+        .card:hover {
             transform: scale(1.05);
         }
 
- /* Estilo para o rodapé */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: rgb(56, 127, 57); /* Cor de fundo do rodapé */
-}
+        /* Estilo do título dos cartões */
+        .card-title {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: rgb(56, 127, 57);
+        }
 
-.social-media {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 10px; /* Espaçamento entre os ícones e o texto */
-}
+        /* Estilo do texto dos cartões */
+        .card-body p {
+            font-size: 1rem;
+            line-height: 1.6;
+            font-weight: 300;
+        }
 
-.social-icon {
-  color: #ffffff; /* Cor dos ícones */
-  font-size: 24px; /* Tamanho dos ícones */
-  text-decoration: none;
-}
+        /* Estilo para o rodapé */
+        footer {
+            background-color: rgb(56, 127, 57);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
 
-.social-icon:hover {
-  color: #007bff; /* Cor dos ícones ao passar o mouse */
-}
+        .social-media {
+            margin: 10px 0;
+        }
 
-p {
-  margin: 0; /* Remove a margem padrão do parágrafo */
-  font-size: 14px; /* Tamanho da fonte do texto de direitos autorais */
-  color: #ffffff; /* Cor do texto de direitos autorais */
-}
+        .social-media a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+        }
 
+        .social-media a:hover {
+            color: #007bff;
+        }
 
-
-
-       
+        .borrad{
+          border-radius: 15px 15px 0 0;
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">
-          <img src="imagens/WhatsApp Image 2024-09-09 at 10.09.55.jpeg" width="80" height="80" alt="Logo">
+            <!-- Logo na barra de navegação -->
+            <img src="imagens/WhatsApp Image 2024-09-09 at 10.09.55.jpeg" width="80" height="80" alt="">
         </a>
+        <!-- Botão de menu para dispositivos móveis -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="explore.html">Explore<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="podcast.html">Podcast<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Galeria 
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="fotos.html">Fotos</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Literatura
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="livros.html">Livros</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Cultura Brasileira
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="tradições.html">Tradições</a>
-                <a class="dropdown-item" href="culinária.html">Culinária</a>
-                <a class="dropdown-item" href="música.html">Música</a>
-              </div>
-            </li>
-          
-          </ul>
-          <!--
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            -->
-        </div>
-      </nav>
 
-    <!-- Galeria de Fotos -->
-    <div class="container mt-5">
-        
-        <div class="row">
-            <!-- Blocos de imagens organizados em grid para melhor responsividade -->
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagens/g1.jpeg" class="img-thumbnail" alt="Foto 1">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagens/g2.jpeg" class="img-thumbnail" alt="Foto 2">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagens/g3.jpeg" class="img-thumbnail" alt="Foto 3">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagens/g4.jpeg" class="img-thumbnail" alt="Foto 4">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagens/g5.jpeg" class="img-thumbnail" alt="Foto 5">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagens/g6.jpeg" class="img-thumbnail" alt="Foto 6">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagens/g7.jpeg" class="img-thumbnail" alt="Foto 7">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagens/g8.jpeg" class="img-thumbnail" alt="Foto 8">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagens/g9.jpeg" class="img-thumbnail" alt="Foto 9">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagens/g10.jpeg" class="img-thumbnail" alt="Foto 10">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagens/g11.jpeg" class="img-thumbnail" alt="Foto 11">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagens/g12.jpeg" class="img-thumbnail" alt="Foto 12">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagens/g13.jpeg" class="img-thumbnail" alt="Foto 13">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagens/g14.jpeg" class="img-thumbnail" alt="Foto 14">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagens/g15.jpeg" class="img-thumbnail" alt="Foto 15">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagens/g16.jpeg" class="img-thumbnail" alt="Foto 16">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagens/g17.jpeg" class="img-thumbnail" alt="Foto 17">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagens/g18.jpeg" class="img-thumbnail" alt="Foto 18">
-            </div>
+        <!-- Links de navegação -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- Link para a página inicial -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="explore.html">Explore<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="podcast.html">Podcast<span class="sr-only">(current)</span></a>
+                  </li>
+                <!-- Dropdown para galeria de fotos -->
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGaleria" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeria</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownGaleria">
+                        <a class="dropdown-item" href="fotos.html">Fotos</a>
+                    </div>
+                </li>
+                <!-- Dropdown para artigos -->
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownArtigos" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Literatura</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownArtigos">
+                        <a class="dropdown-item" href="livros.html">Livros</a>
+                    </div>
+                </li>
+                <!-- Dropdown para cultura brasileira -->
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCultura" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cultura Brasileira</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownCultura">
+                        <a class="dropdown-item" href="tradições.html">Tradições</a>
+                        <a class="dropdown-item" href="culinária.html">Culinária</a>
+                        <a class="dropdown-item" href="música.html">Música</a>
+                    </div>
+                </li>     
+                     
+            </ul>
         </div>
-        <br>
-        <br>
+    </nav>
+
+
+    <br>
+
+    <div class="row justify-content-center">
+
+    <div class="card m-3" style="width: 18rem;">
+        <img src="imagens/g1.jpeg" class="card-img-top borrad" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mulheres com Cestas</h5>
+            <p class="card-text">Vestidas com trajes tradicionais, estas mulheres carregam cestas cheias de frutas na cabeça, representando a riqueza cultural e agrícola do Brasil.</p>
+
+        </div>
     </div>
 
-   <!-- Rodapé -->
+  <div class="card m-3" style="width: 18rem;">
+        <img src="imagens/g2.jpeg" class="card-img-top borrad" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Festa Junina</h5>
+            <p class="card-text">Uma animada festa junina com dançarinos e decorações típicas, celebrando a cultura popular brasileira.</p>
+        </div>
+    </div>
+
+
+    <div class="card m-3" style="width: 18rem;">
+        <img src="imagens/g3.jpeg" class="card-img-top borrad" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Floresta Amazônica</h5>
+            <p class="card-text">Vista aérea de um rio serpenteando pela densa e vibrante Floresta Amazônica, destacando a biodiversidade única do país.</p>       
+        </div>
+    </div>
+
+    <div class="card m-3" style="width: 18rem;">
+      <img src="imagens/g4.jpeg" class="card-img-top borrad" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Mercado de Rua</h5>
+          <p class="card-text">Uma barraca de mercado colorida, repleta de frutas e vegetais frescos, simbolizando a diversidade gastronômica brasileira.</p>       
+      </div>
+  </div>
+
+  <div class="card m-3" style="width: 18rem;">
+    <img src="imagens/g5.jpeg" class="card-img-top borrad" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Carnaval</h5>
+        <p class="card-text">Duas mulheres sorridentes e fantasiadas em trajes coloridos de Carnaval, uma das festas mais icônicas do Brasil.</p>       
+    </div>
+</div>
+
+<div class="card m-3" style="width: 18rem;">
+  <img src="imagens/g6.jpeg" class="card-img-top borrad" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Atleta Olímpica</h5>
+      <p class="card-text">Uma atleta brasileira orgulhosa com a bandeira nacional, representando o talento esportivo e as conquistas do Brasil.</p>       
+  </div>
+</div>
+
+<div class="card m-3" style="width: 18rem;">
+  <img src="imagens/g7.jpeg" class="card-img-top borrad" alt="...">
+  <div class="card-body">
+      <h5 class="card-title">Dança de Máscaras</h5>
+      <p class="card-text">Artistas mascarados performando uma dança tradicional, mantendo vivas as tradições folclóricas.</p>       
+  </div>
+</div>
+
+<div class="card m-3" style="width: 18rem;">
+  <img src="imagens/g8.jpeg" class="card-img-top borrad" alt="...">
+  <div class="card-body">
+      <h5 class="card-title">Jogadora de Vôlei</h5>
+      <p class="card-text">Uma jogadora de vôlei brasileira em ação, simbolizando a paixão nacional pelo esporte.</p>       
+  </div>
+</div>
+
+<div class="card m-3" style="width: 18rem;">
+  <img src="imagens/g9.jpeg" class="card-img-top borrad" alt="...">
+  <div class="card-body">
+      <h5 class="card-title">Latas de Guaraná</h5>
+      <p class="card-text">Latas de Guaraná, o refrigerante popular brasileiro, conhecido por seu sabor único.</p>       
+  </div>
+</div>
+
+<div class="card m-3" style="width: 18rem;">
+  <img src="imagens/g10.jpeg" class="card-img-top borrad" alt="...">
+  <div class="card-body">
+      <h5 class="card-title">Loja de Discos</h5>
+      <p class="card-text">Uma loja de discos com álbuns clássicos brasileiros, destacando a rica cena musical do país.</p>       
+  </div>
+</div>
+
+<div class="card m-3" style="width: 18rem;">
+  <img src="imagens/g11.jpeg" class="card-img-top borrad" alt="...">
+  <div class="card-body">
+      <h5 class="card-title">Bumba Meu Boi</h5>
+      <p class="card-text">Representação do tradicional festival Bumba Meu Boi, com uma fantasia colorida de boi.</p>       
+  </div>
+</div>
+
+<div class="card m-3" style="width: 18rem;">
+  <img src="imagens/g12.jpeg" class="card-img-top borrad" alt="...">
+  <div class="card-body">
+      <h5 class="card-title">Cavaleiros Gaúchos</h5>
+      <p class="card-text">Cavaleiros gaúchos com bandeiras, celebrando as tradições e a cultura do sul do Brasil.</p>       
+  </div>
+</div>
+
+<div class="card m-3" style="width: 18rem;">
+  <img src="imagens/g13.jpeg" class="card-img-top borrad" alt="...">
+  <div class="card-body">
+      <h5 class="card-title">Tucano</h5>
+      <p class="card-text">Um tucano em um galho, com seu característico bico colorido, representando a rica fauna brasileira.</p>       
+  </div>
+</div>
+
+<div class="card m-3" style="width: 18rem;">
+  <img src="imagens/g14.jpeg" class="card-img-top borrad" alt="...">
+  <div class="card-body">
+      <h5 class="card-title">Skatista Olímpica</h5>
+      <p class="card-text">Jovem skatista brasileira em ação durante uma competição olímpica, destacando o talento esportivo emergente do Brasil.</p>       
+  </div>
+</div>
+
+<div class="card m-3" style="width: 18rem;">
+  <img src="imagens/g15.jpeg" class="card-img-top borrad"  alt="...">
+  <div class="card-body">
+      <h5 class="card-title">Cristo Redentor</h5>
+      <p class="card-text">Representação do Cristo Redentor em um desfile, celebrando um dos maiores símbolos do Brasil.</p>       
+  </div>
+</div>
+
+<div class="card m-3" style="width: 18rem;">
+  <img src="imagens/g16.jpeg" class="card-img-top borrad" alt="...">
+  <div class="card-body">
+      <h5 class="card-title">Indígenas em Festival</h5>
+      <p class="card-text">Grupo de indígenas brasileiros em trajes tradicionais, preservando a cultura e as tradições ancestrais.</p>       
+  </div>
+</div>
+
+<div class="card m-3" style="width: 18rem;">
+  <img src="imagens/g17.jpeg" class="card-img-top borrad" alt="...">
+  <div class="card-body">
+      <h5 class="card-title">Fitinhas do Bonfim</h5>
+      <p class="card-text">Fitas coloridas do Senhor do Bonfim, representando fé e tradição popular, comumente vistas na Bahia.</p>       
+  </div>
+</div>
+
+<div class="card m-3" style="width: 18rem;">
+  <img src="imagens/g18.jpeg" class="card-img-top borrad" alt="...">
+  <div class="card-body">
+      <h5 class="card-title">Ayrton Senna</h5>
+      <p class="card-text">Ayrton Senna, o lendário piloto brasileiro de Fórmula 1, conhecido mundialmente por seu talento e carisma.</p>       
+  </div>
+</div>
+
+
+
+
+  
+    
+   
+    </div>
+
+
+
+    
+      <!-- Rodapé -->
   <footer>
     <div class="social-media">
       <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -225,9 +329,8 @@ p {
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-   
-
-    <!-- LIBRAS -->
+  
+    <!-- Plugin VLibras para acessibilidade em LIBRAS -->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
@@ -239,8 +342,18 @@ p {
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 
-    <!-- Importando o jQuery e JS do Bootstrap -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- Importando o jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- Importando o js do Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
