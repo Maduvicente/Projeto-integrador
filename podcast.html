@@ -6,94 +6,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Podcast Brasil em Cores</title>
   <link rel="shortcut icon" href="imagens/icons8-brasil-48.png" type="image/x-icon">
-
-  <!-- Fonte original -->
-  <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Fonte do Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <style>
-    /* Estilos gerais do corpo da página */
+    /* Corpo da página */
     body {
-      background-color: rgb(217, 236, 172);
-      font-family: Arial, Helvetica, sans-serif;
-      color: #333;
       background-image: url('imagens/c5.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: 'Roboto', Arial, sans-serif;
+      color: #333;
       min-height: 100vh;
+      margin: 0;
       display: flex;
       flex-direction: column;
     }
 
-    /* Estilo da barra de navegação */
-    .navbar {
-      background-color: rgb(56, 127, 57);
-    }
-
-    /* Estilos dos links da barra de navegação */
-    .navbar-nav .nav-item .nav-link {
-      color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
-      transition: background-color 0.3s ease-in-out;
-    }
-
-    /* Estilo para o conteúdo principal */
-    .container {
-      flex: 1;
-    }
-
-    /* Card personalizado */
-    .card {
-      max-width: 600px;
-      margin: 0 auto 30px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      border-radius: 8px;
-    }
-
-    .card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-top-left-radius: 8px;
-      border-bottom-left-radius: 8px;
-    }
-
-    /* Estilo para o rodapé */
-    footer {
+    /* Podcast Header */
+    .podcast-header {
+      background: rgba(0, 100, 0, 0.8);
+      color: #fff;
+      padding: 40px 20px;
       text-align: center;
-      padding: 20px;
-      background-color: rgb(56, 127, 57);
+    }
+
+    .podcast-header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .podcast-header p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    /* Cards */
+    .podcast-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .podcast-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .podcast-card img {
       width: 100%;
-      margin-top: auto;
+      object-fit: cover;
     }
 
-    .social-media {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-bottom: 10px;
+    .podcast-card .card-body {
+      padding: 20px;
     }
 
-    .social-icon {
-      color: #ffffff;
-      font-size: 24px;
-      text-decoration: none;
+    .podcast-card .btn {
+      background-color: #007b00;
+      color: #fff;
+      font-weight: bold;
     }
 
-    .social-icon:hover {
-      color: #007bff;
+    .podcast-card .btn:hover {
+      background-color: #005500;
     }
 
-    p {
-      margin: 0;
-      font-size: 14px;
-      color: #ffffff;
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .podcast-header h1 {
+        font-size: 2rem;
+      }
+
+      .podcast-header p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 
 <body>
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <a class="navbar-brand" href="#">
       <img src="imagens/WhatsApp Image 2024-09-09 at 10.09.55.jpeg" width="80" height="80" alt="Logo">
@@ -104,40 +104,31 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="explore.html">Explore<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="podcast.html">Podcast<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Galeria 
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
+        <li class="nav-item"><a class="nav-link" href="podcast.html">Podcast</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+            Galeria
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu">
             <a class="dropdown-item" href="fotos.html">Fotos</a>
           </div>
         </li>
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
             Literatura
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu">
             <a class="dropdown-item" href="livros.html">Livros</a>
           </div>
         </li>
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
             Cultura Brasileira
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu">
             <a class="dropdown-item" href="tradições.html">Tradições</a>
             <a class="dropdown-item" href="culinária.html">Culinária</a>
             <a class="dropdown-item" href="música.html">Música</a>
@@ -147,28 +138,30 @@
     </div>
   </nav>
 
-  <!-- Seção do Podcast -->
-  <div class="container mt-5">
-    <h2 style="font-family:'Courier New', Courier, monospace; color: rgb(255, 255, 255)" class="text-center mb-5">Podcast Brasil em Cores</h2>
-    <p class="text-center">Descubra a diversidade cultural do Brasil em nosso podcast! Em cada episódio, exploramos as riquezas e tradições das cinco regiões do país. Conheça mais sobre o Brasil através de conversas, histórias e entrevistas fascinantes.</p>
+  <!-- Cabeçalho do Podcast -->
+  <header class="podcast-header">
+    <h1>Podcast Brasil em Cores</h1>
+    <p>Descubra as riquezas culturais do Brasil em uma jornada pelas cinco regiões do país.</p>
+  </header>
 
-    <!-- Card do episódio -->
-    <div class="card mb-3">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="imagens/WhatsApp Image 2024-10-29 at 11.56.55.jpeg" class="img-fluid rounded-start" alt="Podcast Episode Image">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Episódio 1: Piloto</h5>
-            <p class="card-text">Neste episódio, exploramos as maravilhas da Região Norte, conhecendo um pouco mais sobre a cultura local, tradições e a gastronomia.</p>
-            <a href="https://open.spotify.com/show/1y8NWJU6mngEJRrsZUZkjV?si=52c7b64514a74c0f&nd=1&dlsi=7189e6260c5748bf" class="btn btn-primary" target="_blank">Ouvir Episódio</a>
-
+  <!-- Episódios -->
+  <main class="container my-5">
+    <section id="episodios">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="podcast-card">
+            <img src="imagens/WhatsApp Image 2024-10-29 at 11.56.55.jpeg" alt="Episódio 1">
+            <div class="card-body">
+              <h5>Episódio 1: Piloto</h5>
+              <p>Explore as maravilhas da Região Norte, suas tradições, cultura e gastronomia.</p>
+              <a href="https://open.spotify.com/show/1y8NWJU6mngEJRrsZUZkjV" class="btn btn-block" target="_blank">Ouvir no Spotify</a>
+            </div>
           </div>
         </div>
+        <!-- Outros episódios podem ser adicionados aqui -->
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
   <!-- Rodapé -->
   <footer>
@@ -179,8 +172,6 @@
     </div>
     <p>&copy; 2024 Projeto Integrador. SENAI TM.</p>
   </footer>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <!-- LIBRAS -->
   <div vw class="enabled">
@@ -194,8 +185,9 @@
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
 
-  <!-- Importando o jQuery e JS do Bootstrap -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
+
 </html>
